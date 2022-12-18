@@ -31,6 +31,36 @@ body{
 .logo{
   margin-left: 36px;
 }
+nav ul li a{
+    color: #D3D3D3;
+}
+button{
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: 2px solid #727272;
+  background-color: #353434;
+  text-decoration: none;
+  position: relative;
+  filter: brightness(70%);
+  transition: 0.5s;
+}
+button:hover{
+  filter: brightness(100%);
+  transition: 0.5s;
+}
+.header-text{
+  font-size: 20px;
+}
+.header-text h1{
+  margin-top: 6px;
+  font-size: 40px;
+}
+.header-text h1 span{
+  color: #B3A369;
+}
 /* The side navigation menu 
 https://www.w3schools.com/howto/howto_js_sidenav.asp */
 .sidenav {
