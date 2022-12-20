@@ -1,0 +1,1595 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=latex 2022.12.18)  18 DEC 2022 15:40
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx\HCode\def\HCod
+e##1{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.{\g
+@addto@macro\@documentclasshook{\RequirePackage[#1,html]{tex4ht}}\let\HCode\doc
+umentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname te
+x4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{\HC
+ode}{\documentstyle[tex4ht]}}}\makeatother\HCode .a.b.c.\input  main.tex
+ (main.tex
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\tex4ht.sty
+version 2021-09-14-14:11
+Package: tex4ht 
+--------------------------------------
+--- Note --- for _ at preamble, use the command line option `early_'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ at preamble, use the command line option `early^'
+--------------------------------------
+\tmp:toks=\toks16
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\usepackage.4ht
+version 2022-02-19-13:30
+) (C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks17
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen141
+))
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen142
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count193
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count194
+\leftroot@=\count195
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count196
+\DOTSCASE@=\count197
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen143
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count198
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count199
+\dotsspace@=\muskip16
+\c@parentequation=\count266
+\dspbrk@lvl=\count267
+\tag@help=\toks19
+\row@=\count268
+\column@=\count269
+\maxfields@=\count270
+\andhelp@=\toks20
+\eqnshift@=\dimen144
+\alignsep@=\dimen145
+\tagshift@=\dimen146
+\tagwidth@=\dimen147
+\totwidth@=\dimen148
+\lineht@=\dimen149
+\@envbody=\toks21
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\mathptmx.sty
+Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup6
+\symitalic=\mathgroup7
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks23
+\thm@bodyfont=\toks24
+\thm@headfont=\toks25
+\thm@notefont=\toks26
+\thm@headpunct=\toks27
+\thm@preskip=\skip53
+\thm@postskip=\skip54
+\thm@headsep=\skip55
+\dth@everypar=\toks28
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
+Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks29
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count271
+\calc@Bcount=\count272
+\calc@Adimen=\dimen150
+\calc@Bdimen=\dimen151
+\calc@Askip=\skip56
+\calc@Bskip=\skip57
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count273
+\calc@Cskip=\skip58
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count274
+\l_MT_multwidth_dim=\dimen152
+\origjot=\skip59
+\l_MT_shortvdotswithinadjustabove_dim=\dimen153
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen154
+\l_MT_above_intertext_sep=\dimen155
+\l_MT_below_intertext_sep=\dimen156
+\l_MT_above_shortintertext_sep=\dimen157
+\l_MT_below_shortintertext_sep=\dimen158
+\xmathstrut@box=\box53
+\xmathstrut@dim=\dimen159
+) (C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: dvips.def on input line 149.
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\dvips.def
+File: dvips.def 2022/09/22 v3.1e Graphics/color driver for dvips
+) (C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+) (C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.lt
+x))
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\tikz-hooks.4ht
+version 2021-10-21-13:56
+*****************************
+TeX4ht info: Using dvisvgm4ht TikZ driver. Put \def \pgfsysdriver {driver-name}
+ to your document before use of TikZ if you want to another driver. Use tikz+ o
+ption if your TikZ pictures use patterns.
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
+sty
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
+y
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-common.tex
+\pgfutil@everybye=\toks30
+\pgfutil@tempdima=\dimen160
+\pgfutil@tempdimb=\dimen161
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-common-lists.tex))
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-latex.def
+\pgfutil@abb=\box54
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
+code.tex
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
+sty
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\graphics-hooks
+.4ht
+version 2020-10-17-13:53
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvips.def on input line 107.
+)
+\Gin@req@height=\dimen162
+\Gin@req@width=\dimen163
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
+sty
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex
+\pgfkeys@pathtoks=\toks31
+\pgfkeys@temptoks=\toks32
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+filtered.code.tex
+\pgfkeys@tmptoks=\toks33
+))
+\pgf@x=\dimen164
+\pgf@y=\dimen165
+\pgf@xa=\dimen166
+\pgf@ya=\dimen167
+\pgf@xb=\dimen168
+\pgf@yb=\dimen169
+\pgf@xc=\dimen170
+\pgf@yc=\dimen171
+\pgf@xd=\dimen172
+\pgf@yd=\dimen173
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count275
+\c@pgf@countb=\count276
+\c@pgf@countc=\count277
+\c@pgf@countd=\count278
+\t@pgf@toka=\toks34
+\t@pgf@tokb=\toks35
+\t@pgf@tokc=\toks36
+\pgf@sys@id@count=\count279
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
+fg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-dvisvgm4ht.def
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/webquiz\pgfsys-dvisvgm4
+ht.def
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-dvips.def
+File: pgfsys-dvips.def 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-common-postscript.def
+File: pgfsys-common-postscript.def 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@objectcount=\count280
+))
+\pgf@sys@svg@picnum=\count281
+))
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+ssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count282
+\pgfsyssoftpath@bigbuffer@items=\count283
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+sprotocol.code.tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\xcolor-hooks.4
+ht
+version 2020-10-17-13:53
+) (C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: dvips.def on input line 227.
+LaTeX Info: Redefining \color on input line 711.
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+e.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
+code.tex
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
+code.tex)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
+r.code.tex
+\pgfmath@dimen=\dimen174
+\pgfmath@count=\count284
+\pgfmath@box=\box55
+\pgfmath@toks=\toks37
+\pgfmath@stack@operand=\toks38
+\pgfmath@stack@operation=\toks39
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.code.tex
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.basic.code.tex)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.trigonometric.code.tex)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.random.code.tex)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.comparison.code.tex)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.base.code.tex)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.round.code.tex)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.misc.code.tex)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.integerarithmetics.code.tex)))
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
+.code.tex
+\c@pgfmathroundto@lastzeros=\count285
+))
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
+tex)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epoints.code.tex
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen175
+\pgf@picmaxx=\dimen176
+\pgf@picminy=\dimen177
+\pgf@picmaxy=\dimen178
+\pgf@pathminx=\dimen179
+\pgf@pathmaxx=\dimen180
+\pgf@pathminy=\dimen181
+\pgf@pathmaxy=\dimen182
+\pgf@xx=\dimen183
+\pgf@xy=\dimen184
+\pgf@yx=\dimen185
+\pgf@yy=\dimen186
+\pgf@zx=\dimen187
+\pgf@zy=\dimen188
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen189
+\pgf@path@lasty=\dimen190
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathusage.code.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen191
+\pgf@shorten@start@additional=\dimen192
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+escopes.code.tex
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box56
+\pgf@hbox=\box57
+\pgf@layerbox@main=\box58
+\pgf@picture@serial@count=\count286
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+egraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen193
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransformations.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen194
+\pgf@pt@y=\dimen195
+\pgf@pt@temp=\dimen196
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+equick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eobjects.code.tex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+earrows.code.tex
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen197
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen198
+\pgf@sys@shading@range@num=\count287
+\pgf@shadingcount=\count288
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eexternal.code.tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box59
+))
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+elayers.code.tex
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransparency.code.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epatterns.code.tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+erdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+shapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box60
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+plot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-0-65.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen199
+\pgf@nodesepend=\dimen256
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-1-18.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
+y
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
+ty
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex))
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex))
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
+code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex)
+\pgffor@iter=\dimen257
+\pgffor@skip=\dimen258
+\pgffor@stack=\toks40
+\pgffor@toks=\toks41
+))
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z\tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count289
+\pgfplotmarksize=\dimen259
+)
+\tikz@lastx=\dimen260
+\tikz@lasty=\dimen261
+\tikz@lastxsaved=\dimen262
+\tikz@lastysaved=\dimen263
+\tikz@lastmovetox=\dimen264
+\tikz@lastmovetoy=\dimen265
+\tikzleveldistance=\dimen266
+\tikzsiblingdistance=\dimen267
+\tikz@figbox=\box61
+\tikz@figbox@bg=\box62
+\tikz@tempbox=\box63
+\tikz@tempbox@bg=\box64
+\tikztreelevel=\count290
+\tikznumberofchildren=\count291
+\tikznumberofcurrentchild=\count292
+\tikz@fig@count=\count293
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+matrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count294
+\pgfmatrixcurrentcolumn=\count295
+\pgf@matrix@numberofcolumns=\count296
+)
+\tikz@expandcount=\count297
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/preprint\authblk.sty
+Package: authblk 2001/02/27 1.3 (PWD)
+\affilsep=\skip60
+\@affilsep=\skip61
+\c@Maxaffil=\count298
+\c@authors=\count299
+\c@affil=\count300
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xy.sty
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xy.tex
+Bootstrap'ing: catcodes, docmode,
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xyrecat.tex)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xyidioms.tex)
+
+ Xy-pic version 3.8.9 <2013/10/06>
+ Copyright (c) 1991-2013 by Kristoffer H. Rose <krisrose@tug.org> and others
+ Xy-pic is free software: see the User's Guide for details.
+
+Loading kernel: messages; fonts; allocations: state,
+\X@c=\dimen268
+\Y@c=\dimen269
+\U@c=\dimen270
+\D@c=\dimen271
+\L@c=\dimen272
+\R@c=\dimen273
+\Edge@c=\toks42
+\X@p=\dimen274
+\Y@p=\dimen275
+\U@p=\dimen276
+\D@p=\dimen277
+\L@p=\dimen278
+\R@p=\dimen279
+\Edge@p=\toks43
+\X@origin=\dimen280
+\Y@origin=\dimen281
+\X@xbase=\dimen282
+\Y@xbase=\dimen283
+\X@ybase=\dimen284
+\Y@ybase=\dimen285
+\X@min=\dimen286
+\Y@min=\dimen287
+\X@max=\dimen288
+\Y@max=\dimen289
+\lastobjectbox@=\box65
+\zerodotbox@=\box66
+\almostz@=\dimen290
+ direction,
+\d@X=\dimen291
+\d@Y=\dimen292
+\K@=\count301
+\KK@=\count302
+\Direction=\count303
+\K@dXdY=\dimen293
+\K@dYdX=\dimen294
+\xyread@=\read3
+\xywrite@=\write4
+\csp@=\count304
+\quotPTK@=\dimen295
+
+utility macros; pictures: \xy, positions,
+\swaptoks@@=\toks44
+\connectobjectbox@@=\box67
+ objects,
+\styletoks@=\toks45
+ decorations;
+kernel objects: directionals, circles, text; options; algorithms: directions,
+edges, connections;  Xy-pic loaded)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+Package: xy 2013/10/06 Xy-pic version 3.8.9
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xyall.tex
+ Xy-pic option: All features v.3.8
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xycurve.tex
+ Xy-pic option: Curve and Spline extension v.3.12 curve,
+\crv@cnt@=\count305
+\crvpts@=\toks46
+\splinebox@=\box68
+\splineval@=\dimen296
+\splinedepth@=\dimen297
+\splinetol@=\dimen298
+\splinelength@=\dimen299
+ circles,
+\L@=\dimen300
+ loaded)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xyframe.tex
+ Xy-pic option: Frame and Bracket extension v.3.14 loaded)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xycmtip.tex
+ Xy-pic option: Computer Modern tip extension v.3.7
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xytips.tex
+ Xy-pic option: More Tips extension v.3.11 loaded) loaded)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xyline.tex
+ Xy-pic option: Line styles extension v.3.10
+\xylinethick@=\dimen301
+ loaded)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xyrotate.tex
+ Xy-pic option: Rotate and Scale extension v.3.8 loaded)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xycolor.tex
+ Xy-pic option: Colour extension v.3.11 loaded)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xymatrix.tex
+ Xy-pic option: Matrix feature v.3.14
+\Row=\count306
+\Col=\count307
+\queue@=\toks47
+\queue@@=\toks48
+\qcount@=\count308
+\qcount@@=\count309
+\matrixsize@=\count310
+ loaded)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xyarrow.tex
+ Xy-pic option: Arrow and Path feature v.3.9 path, \ar, loaded)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xygraph.tex
+ Xy-pic option: Graph feature v.3.11 loaded) loaded))
+\c@result=\count311
+\c@theorem=\count312
+\c@solution=\count313
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\fancyhdr-hooks
+.4ht
+version 2020-10-17-13:53
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip62
+\f@nch@O@elh=\skip63
+\f@nch@O@erh=\skip64
+\f@nch@O@olh=\skip65
+\f@nch@O@orh=\skip66
+\f@nch@O@elf=\skip67
+\f@nch@O@erf=\skip68
+\f@nch@O@olf=\skip69
+\f@nch@O@orf=\skip70
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\tex4ht.4ht
+version 2021-06-20-15:33
+--------------------------------------
+--- Note --- for additional information, use the command line option `info'
+--------------------------------------
+
+::::::::::::::::::::::::::::::::::::::::::
+ TeX4ht info is available in the log file 
+::::::::::::::::::::::::::::::::::::::::::
+) (C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\tex4ht.sty
+version 2021-09-14-14:11
+
+l.855 --- TeX4ht warning --- nonprimitive \everypar ---
+--- needs --- tex4ht main ---
+\tmp:cnt=\count314
+\openout15 = `main.tmp'.
+
+(main.tmp)
+\tmp:dim=\skip71
+--------------------------------------
+--- Note --- for XML code, use the command line option `xml' or `xhtml'
+--------------------------------------
+ (main.xref)
+\:refout=\write5
+\openout5 = `main.xref'.
+
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2022-03-08-13:51
+--------------------------------------
+--- Note --- to remove the <?xml version=...?> processing instruction use the c
+ommand line option `no-VERSION'
+--------------------------------------
+--------------------------------------
+--- Note --- to remove the DOCTYPE declaration use the command line option `no-
+DOCTYPE'
+--------------------------------------
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4ht
+version 2022-02-28-13:22
+)
+--------------------------------------
+--- Note --- for marking of the base font, use the command line option `fonts+'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for non active _, use the command line option `no_'
+--------------------------------------
+--------------------------------------
+--- Note --- for _ of catcode 13, use the command line option `_13'
+--------------------------------------
+--------------------------------------
+--- Note --- for non active ^, use the command line option `no^'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ of catcode 13, use the command line option `^13'
+--------------------------------------
+ (C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2022-03-08-13:51
+--------------------------------------
+--- Note --- for alternative charset, use the command line option `charset=...'
+
+--------------------------------------
+--------------------------------------
+--- Note --- to ignore CSS font decoration, use the `NoFonts' command line opti
+on
+--------------------------------------
+--------------------------------------
+--- Note --- for jpg bitmaps of pictures, use the `jpg' command line option. (C
+haracter bitmaps are controled only by `g' records of tex4ht.env and `-g' switc
+hes of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for gif bitmaps of pictures, use the `gif' command line option. (C
+haracter bitmaps are controled only by `g' records of tex4ht.env and `-g' switc
+hes of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for content and toc in 2 frames, use the command line option `fram
+es'
+--------------------------------------
+--------------------------------------
+--- Note --- for content, toc, and footnotes in 3 frames, use the command line 
+option `frames-fn'
+--------------------------------------
+--------------------------------------
+--- Note --- for file extension name xht, use the command line option `xht'
+--------------------------------------
+TeX4ht package options: html
+--------------------------------------
+--- Note --- To print a timestamp, use the command line option timestamp
+--------------------------------------
+--------------------------------------
+--- Note --- to ignore CSS code, use the command line option `-css
+--------------------------------------
+--------------------------------------
+--- Note --- for inline CSS code, use the command line option `css-in'
+--------------------------------------
+--------------------------------------
+--- Note --- for pop ups on mouse over, use the command line option `mouseover'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for addressing images in a subdirectory, use the command line opti
+on `imgdir:.../'
+--------------------------------------
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4ht
+version 2022-02-28-13:22
+)
+\:tokwrite=\toks49
+\:tokpage=\toks50
+--------------------------------------
+--- Note --- for back links to toc, use the command line option `sections+'
+--------------------------------------
+--------------------------------------
+--- Note --- for linear crosslinks of pages, use the command line option `next'
+
+--------------------------------------
+\openout15 = `main.4ct'.
+
+\:tocout=\write6
+\openout6 = `main.4tc'.
+
+ (C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2022-03-08-13:51
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4ht
+version 2022-02-28-13:22
+) (C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\latex.4ht
+version 2022-02-01-14:27
+LaTeX Info: Redefining \_ on input line 173.
+LaTeX Info: Redefining \, on input line 792.
+LaTeX Info: Redefining \; on input line 793.
+LaTeX Info: Redefining \! on input line 794.
+LaTeX Info: Redefining \: on input line 795.
+LaTeX Info: Redefining \> on input line 796.
+--------------------------------------
+--- Note --- for links into captions, instead of float heads, use the command l
+ine option `refcaption'
+--------------------------------------
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2022-03-08-13:51
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4ht
+version 2022-02-28-13:22
+) (C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2022-03-08-13:51
+--------------------------------------
+--- Note --- For mini tocs immediately aftter the header use the command line o
+ption `minitoc<'
+--------------------------------------
+--------------------------------------
+--- Note --- for enumerated list elements with valued data, use the command lin
+e option `enumerate+'
+--------------------------------------
+--------------------------------------
+--- Note --- for enumerated list elements li's with value attributes, use the c
+ommand line option `enumerate-'
+--------------------------------------
+--------------------------------------
+--- Note --- for CSS2 code, use the command line option `css2'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial tabular, use the command line option `pic-tabular'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap fbox'es, use the command line option `pic-fbox'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap framebox'es, use the command line option `pic-framebox'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for inline footnotes use command line option `fn-in'
+--------------------------------------
+--------------------------------------
+--- Note --- for tracing of latex font commands, use the command line option `f
+onts'
+--------------------------------------
+--------------------------------------
+--- Note --- for width specifications of tabular p entries, use the `p-width' c
+ommand line option or a configuration similar to \Configure{HColWidth}{\HCode{ 
+style="width:\HColWidth"}}
+--------------------------------------
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4ht
+version 2022-02-28-13:22
+--------------------------------------
+--- Note --- for pictorial eqnarray, use the command line option `pic-eqnarray'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial $...$ environments, use the command line option `pic
+-m' (not recommended!!)
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial $...$ and $$...$$ environments with latex alt, use t
+he command line option `pic-m+' (not safe!!)
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+))
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\fontmath.4ht
+version 2018-11-06-15:55
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2022-03-08-13:51
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4ht
+version 2022-02-28-13:22
+)) (C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\article.4ht
+version 2022-02-22-13:25
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2022-03-08-13:51
+--------------------------------------
+--- Note --- for automatic sectioning pagination, use the command line option `
+1', `2', `3', '4', '5', '6', or '7'
+--------------------------------------
+--------------------------------------
+--- Note --- for files named derived from section titles, use the command line 
+option `sec-filename'
+--------------------------------------
+--------------------------------------
+--- Note --- for i-columns index, use the command line option `index=i' (e.g., 
+index=2)
+--------------------------------------
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4ht
+version 2022-02-28-13:22
+)) (C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\amssymb.4ht
+version 2009-05-21-09:32
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2022-03-08-13:51
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4ht
+version 2022-02-28-13:22
+))
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\amsfonts.4ht
+version 2009-05-21-09:32
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2022-03-08-13:51
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4ht
+version 2022-02-28-13:22
+)) (C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\amsmath.4ht
+version 2019-12-29-14:17
+\tmp:muskip=\muskip18
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2022-03-08-13:51
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4ht
+version 2022-02-28-13:22
+LaTeX Info: Redefining \[ on input line 506.
+LaTeX Info: Redefining \] on input line 506.
+)) (C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\amstext.4ht
+version 2009-05-21-09:32
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2022-03-08-13:51
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4ht
+version 2022-02-28-13:22
+)) (C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\amsbsy.4ht
+version 2009-05-21-09:32
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2022-03-08-13:51
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4ht
+version 2022-02-28-13:22
+)) (C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\amsopn.4ht
+version 2009-05-21-09:32
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2022-03-08-13:51
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4ht
+version 2022-02-28-13:22
+)) (C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\amsthm.4ht
+version 2009-05-21-09:32
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2022-03-08-13:51
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4ht
+version 2022-02-28-13:22
+))
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\mathtools.4ht
+version 2021-06-20-09:36
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2022-03-08-13:51
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4ht
+version 2022-02-28-13:22
+)) (C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\url.4ht
+version 2022-01-02-14:32
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2022-03-08-13:51
+--------------------------------------
+--- Note --- for URL encoding within href use the command line option `url-enc'
+
+--------------------------------------
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4ht
+version 2022-02-28-13:22
+)) (C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\color.4ht
+version 2022-02-01-14:27
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2022-03-08-13:51
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4ht
+version 2022-02-28-13:22
+)) (C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\dvips.4ht
+version 2009-05-21-09:32
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2022-03-08-13:51
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4ht
+version 2022-02-28-13:22
+))
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\dvipsnam.4ht
+version 2009-05-21-09:32
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2022-03-08-13:51
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4ht
+version 2022-02-28-13:22
+)) (C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\pgf.4ht
+version 2009-05-21-09:32
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2022-03-08-13:51
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4ht
+version 2022-02-28-13:22
+))
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\graphicx.4ht
+version 2022-01-12-13:53
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2022-03-08-13:51
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4ht
+version 2022-02-28-13:22
+))
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\graphics.4ht
+version 2021-08-12-13:49
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2022-03-08-13:51
+--------------------------------------
+--- Note --- if included graphics are of degraded quality, try the command line
+ options `graphics-num' or `graphics-'. The `num' should provide the density of
+ pixels in the bitmaps (e.g., 110). 
+--------------------------------------
+--------------------------------------
+--- Note --- for key dimensions try the option `Gin-dim'; for key dimensions wh
+en bounding box is unavailable try `Gin-dim+'; neither is recommended
+--------------------------------------
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4ht
+version 2022-02-28-13:22
+)) (C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\xcolor.4ht
+version 2019-04-09-10:06
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\color.4ht
+version 2022-02-01-14:27
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2022-03-08-13:51
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4ht
+version 2022-02-28-13:22
+)) (C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\authblk.4ht
+version 2017-09-09-16:15
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2022-03-08-13:51
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4ht
+version 2022-02-28-13:22
+)) (C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\xy.4ht
+version 2009-05-21-09:32
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2022-03-08-13:51
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4ht
+version 2022-02-28-13:22
+)) (C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2022-03-08-13:51
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4ht
+version 2022-02-28-13:22
+))
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 4
+6.
+ (C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-dvi
+ps.def
+File: l3backend-dvips.def 2022-10-26 L3 backend support: dvips
+\l__pdf_internal_box=\box69
+\g__pdf_backend_object_int=\count315
+\l__pdf_backend_content_box=\box70
+\l__pdf_backend_model_box=\box71
+\g__pdf_backend_annotation_int=\count316
+\g__pdf_backend_link_int=\count317
+\g__pdf_backend_link_sf_int=\count318
+) (main.aux
+
+LaTeX Warning: Label `figure:solving-CVP-bad-basis' multiply defined.
+
+
+LaTeX Warning: Label `textbook' multiply defined.
+
+
+LaTeX Warning: Label `textbook' multiply defined.
+
+)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+--- file main.css ---
+ [1
+
+] [2]
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
+ 49.
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
+ 49.
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
+ 49.
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
+ 49.
+
+(C:\Users\Teddy\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 49.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 49.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 49.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \\endcsname 
+l.65 ...ion{Ideas, Definitions, and some Theorems}
+                                                  
+? Q
+OK, entering \batchmode...
+! Missing \endcsname inserted.
+<to be read again> 
+                   \\endcsname 
+l.65 ...ion{Ideas, Definitions, and some Theorems}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \\endcsname 
+l.65 ...ion{Ideas, Definitions, and some Theorems}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \\endcsname 
+l.65 ...ion{Ideas, Definitions, and some Theorems}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+ [3]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 70.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 70.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 70.
+l. 80 Writing main.idv[1] (main0x.svg)
+ [4]
+l. 87 Writing main.idv[2] (main1x.svg)
+l. 93 Writing main.idv[3] (main2x.svg)
+l. 96 Writing main.idv[4] (main3x.svg)
+ [5]
+l. 104 Writing main.idv[5] (main4x.svg)
+l. 106 Writing main.idv[6] (main5x.svg)
+l. 109 Writing main.idv[7] (main6x.svg)
+l. 111 Writing main.idv[8] (main7x.svg)
+l. 113 Writing main.idv[9] (main8x.svg)
+ [6]
+l. 116 Writing main.idv[10] (main9x.svg)
+ [7]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \\endcsname 
+l.129 \section{Gambler's Ruin}
+                              
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \\endcsname 
+l.129 \section{Gambler's Ruin}
+                              
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \\endcsname 
+l.129 \section{Gambler's Ruin}
+                              
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \\endcsname 
+l.129 \section{Gambler's Ruin}
+                              
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Undefined control sequence.
+l.132 ... i.i.d. random variables on $(\Omega, \Fc
+                                                  ,\Pro)$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+l. 139 Writing main.idv[11] (main10x.svg)
+l. 140 Writing main.idv[12] (main11x.svg)
+l. 144 Writing main.idv[13] (main12x.svg)
+ [8]
+l. 150 Writing main.idv[14] (main13x.svg)
+l. 154 Writing main.idv[15] (main14x.svg)
+ [9]
+l. 165 Writing main.idv[16] (main15x.svg)
+l. 169 Writing main.idv[17] (main16x.svg)
+l. 176 Writing main.idv[18] (main17x.svg)
+l. 176 Writing main.idv[19] (main18x.svg)
+l. 179 Writing main.idv[20] (main19x.svg)
+ [10] [11]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \\endcsname 
+l.193 \section{Enumerating Paths}
+                                 
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \\endcsname 
+l.193 \section{Enumerating Paths}
+                                 
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \\endcsname 
+l.193 \section{Enumerating Paths}
+                                 
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \\endcsname 
+l.193 \section{Enumerating Paths}
+                                 
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+l. 196 Writing main.idv[21] (main20x.svg)
+l. 206 Writing main.idv[22] (main21x.svg)
+ [12]
+l. 213 Writing main.idv[23] (main22x.svg)
+l. 216 Writing main.idv[24] (main23x.svg)
+l. 220 Writing main.idv[25] (main24x.svg)
+ [13]
+l. 245 Writing main.idv[26] (main25x.svg)
+l. 247 Writing main.idv[27] (main26x.svg)
+l. 249 Writing main.idv[28] (main27x.svg)
+l. 250 Writing main.idv[29] (main28x.svg)
+ [14]
+l. 255 Writing main.idv[30] (main29x.svg)
+l. 264 Writing main.idv[31] (main30x.svg)
+ [15] [16]
+l. 315 Writing main.idv[32] (main31x.svg)
+l. 319 Writing main.idv[33] (main32x.svg)
+l. 325 Writing main.idv[34] (main33x.svg)
+ [17]
+l. 331 Writing main.idv[35] (main34x.svg)
+l. 339 Writing main.idv[36] (main35x.svg)
+l. 340 Writing main.idv[37] (main36x.svg)
+ [18]
+l. 350 Writing main.idv[38] (main37x.svg)
+l. 356 Writing main.idv[39] (main38x.svg)
+l. 368 Writing main.idv[40] (main39x.svg)
+ [19]
+l. 376 Writing main.idv[41] (main40x.svg)
+l. 380 Writing main.idv[42] (main41x.svg)
+l. 389 Writing main.idv[43] (main42x.svg)
+Missing character: There is no D in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no . in font nullfont!
+ [20]
+l. 434 Writing main.idv[44] (main43x.svg)
+l. 438 Writing main.idv[45] (main44x.svg)
+l. 442 Writing main.idv[46] (main45x.svg)
+ [21]
+l. 446 Writing main.idv[47] (main46x.svg)
+l. 450 Writing main.idv[48] (main47x.svg)
+l. 454 Writing main.idv[49] (main48x.svg)
+ [22]
+l. 458 Writing main.idv[50] (main49x.svg)
+l. 463 Writing main.idv[51] (main50x.svg)
+l. 465 Writing main.idv[52] (main51x.svg)
+l. 467 Writing main.idv[53] (main52x.svg)
+ [23]
+l. 468 Writing main.idv[54] (main53x.svg)
+l. 469 Writing main.idv[55] (main54x.svg)
+l. 475 Writing main.idv[56] (main55x.svg)
+l. 479 Writing main.idv[57] (main56x.svg)
+ [24]
+l. 483 Writing main.idv[58] (main57x.svg)
+l. 487 Writing main.idv[59] (main58x.svg)
+l. 489 Writing main.idv[60] (main59x.svg)
+l. 494 Writing main.idv[61] (main60x.svg)
+ [25]
+l. 496 Writing main.idv[62] (main61x.svg)
+l. 499 Writing main.idv[63] (main62x.svg)
+l. 503 Writing main.idv[64] (main63x.svg)
+ [26]
+l. 504 Writing main.idv[65] (main64x.svg)
+l. 505 Writing main.idv[66] (main65x.svg)
+l. 505 Writing main.idv[67] (main66x.svg)
+l. 506 Writing main.idv[68] (main67x.svg)
+l. 510 Writing main.idv[69] (main68x.svg)
+ [27]
+l. 516 Writing main.idv[70] (main69x.svg)
+l. 522 Writing main.idv[71] (main70x.svg)
+ [28] [29]
+l. 536 Writing main.idv[72] (main71x.svg)
+l. 540 Writing main.idv[73] (main72x.svg)
+l. 542 Writing main.idv[74] (main73x.svg)
+l. 549 Writing main.idv[75] (main74x.svg)
+ [30]
+l. 553 Writing main.idv[76] (main75x.svg)
+l. 553 Writing main.idv[77] (main76x.svg)
+l. 554 Writing main.idv[78] (main77x.svg)
+l. 563 Writing main.idv[79] (main78x.svg)
+ [31]
+l. 566 Writing main.idv[80] (main79x.svg)
+l. 577 Writing main.idv[81] (main80x.svg)
+l. 577 Writing main.idv[82] (main81x.svg)
+l. 577 Writing main.idv[83] (main82x.svg)
+l. 593 Writing main.idv[84] (main83x.svg)
+l. 594 Writing main.idv[85] (main84x.svg)
+l. 601 Writing main.idv[86] (main85x.svg)
+l. 603 Writing main.idv[87] (main86x.svg)
+ [32]
+l. 606 Writing main.idv[88] (main87x.svg)
+l. 609 Writing main.idv[89] (main88x.svg)
+l. 609 Writing main.idv[90] (main89x.svg)
+l. 609 Writing main.idv[91] (main90x.svg)
+l. 609 Writing main.idv[92] (main91x.svg)
+l. 610 Writing main.idv[93] (main92x.svg)
+l. 612 Writing main.idv[94] (main93x.svg)
+ [33]
+l. 614 Writing main.idv[95] (main94x.svg)
+l. 616 Writing main.idv[96] (main95x.svg)
+l. 620 Writing main.idv[97] (main96x.svg)
+ [34]
+l. 624 Writing main.idv[98] (main97x.svg)
+l. 627 Writing main.idv[99] (main98x.svg)
+l. 631 Writing main.idv[100] (main99x.svg)
+ [35]
+l. 635 Writing main.idv[101] (main100x.svg)
+l. 639 Writing main.idv[102] (main101x.svg)
+l. 643 Writing main.idv[103] (main102x.svg)
+l. 653 Writing main.idv[104] (main103x.svg)
+ [36]
+l. 661 Writing main.idv[105] (main104x.svg)
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.663     \item[(a)]
+                     What is the probability that one of the candidates did ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.663     \item[(a)]
+                     What is the probability that one of the candidates did ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.663     \item[(a)]
+                     What is the probability that one of the candidates did ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.666     L
+           et $\Omega$ denote all possible election results that result in a...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.666     L
+           et $\Omega$ denote all possible election results that result in a...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.666     L
+           et $\Omega$ denote all possible election results that result in a...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.666     L
+           et $\Omega$ denote all possible election results that result in a...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+l. 667 Writing main.idv[106] (main105x.svg)
+l. 671 Writing main.idv[107] (main106x.svg)
+l. 671 Writing main.idv[108] (main107x.svg)
+ [37]
+l. 674 Writing main.idv[109] (main108x.svg)
+l. 679 Writing main.idv[110] (main109x.svg)
+l. 683 Writing main.idv[111] (main110x.svg)
+ [38]
+l. 694 Writing main.idv[112] (main111x.svg)
+l. 700 Writing main.idv[113] (main112x.svg)
+ [39] [40] [41] [42
+
+] (main.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 21387 strings out of 475282
+ 383659 string characters out of 2774090
+ 895588 words of memory out of 3000000
+ 42355 multiletter control sequences out of 15000+600000
+ 497757 words of font info for 105 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 111i,21n,144p,1552b,883s stack positions out of 10000i,1000n,20000p,200000b,80000s
+
+Output written on main.dvi (42 pages, 263280 bytes).

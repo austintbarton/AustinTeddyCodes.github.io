@@ -1,0 +1,2562 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title></title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)"> 
+<meta name="originator" content="TeX4ht (https://tug.org/tex4ht/)"> 
+<!-- html --> 
+<meta name="src" content="main.tex"> 
+<link rel="stylesheet" type="text/css" href="main.css"> 
+</head><body 
+>
+<!--l. 49--><p class="noindent" >
+                                                                                         
+                                                                                         
+<!--l. 49--><p class="indent" >
+                                                                                         
+                                                                                         
+<div class="center" 
+>
+<!--l. 49--><p class="noindent" >
+<!--l. 49--><p class="noindent" ><span 
+class="ptmr7t-x-x-207">&#x00A0;     </span><span 
+class="ptmb7t-x-x-207">An Introduction to a Small Variety of </span><br 
+class="newline" /><span 
+class="ptmb7t-x-x-207">Simple Random Walks</span>
+<div class="tabular"> <table id="TBL-1" class="tabular" 
+ 
+><colgroup id="TBL-1-1g"><col 
+id="TBL-1-1"></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-1-1-"><td  style="white-space:nowrap; text-align:center;" id="TBL-1-1-1"  
+class="td11">            <span 
+class="ptmr7t-x-x-144">Austin Barton</span><sup class="textsuperscript"><span 
+class="ptmr7t-x-x-109">1</span></sup>                                 </td>
+</tr><tr 
+class="vspace" style="font-size:11.74988pt"><td 
+>&nbsp;</td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-2-"><td  style="white-space:nowrap; text-align:center;" id="TBL-1-2-1"  
+class="td11"><sup class="textsuperscript"><span 
+class="ptmr7t-x-x-109">1</span></sup><span 
+class="ptmr7t-x-x-144">MATH 3235, Georgia Institute of Technology</span></td></tr></table>
+</div>
+<!--l. 49--><p class="noindent" ><span 
+class="ptmr7t-x-x-144">December 18, 2022</span></div>
+   <h3 class="likesectionHead"><a 
+ id="x1-1000"></a>A Brief Introduction</h3>
+<!--l. 55--><p class="noindent" >This paper primarily explores and discusses simple random walks and their intersection between
+enumerative combinatorics and probability. We will develop the basic framework to understanding simple
+random walks in a familiar manner utilizing textbooks such as <span 
+class="ptmri7t-x-x-120">Probability: An Introduction </span>by Grimmett
+and Welsh and <span 
+class="ptmri7t-x-x-120">Probability and measure </span>by Billingsley. Then, we will shift to a development of enumerative combinatorics
+ relevant to equiprobable simple random walks.
+<!--l. 57--><p class="indent" >   Random walks are sequences of non-deterministic events. They are ubiquitous in nature and
+fundamental in many subjects. Random walks describe many different processes and offer a lot of
+information on various scenarios when studied. Random walks surface in many areas such as
+combinatorics and graph theory, polymer physics, estimating the size of the Web, financial economics,
+Fermi estimation, ergodic theory, and many more.
+<!--l. 60--><p class="indent" >   We assume some familiarity and elementary understanding of what a path is in mathematics. Simple
+random walks in this paper, and in many case, will be visualized and studied as paths with discrete steps in
+the Cartesian plane where the abscissa (horizontal component of a coordinate) represents the time and the
+ordinate (vertical component) represents the state of the system.
+<!--l. 63--><p class="noindent" >
+   <h3 class="likesectionHead"><a 
+ id="x1-2000"></a>Random Walks</h3>
+<!--l. 65--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">1    </span> <a 
+ id="x1-30001"></a>Ideas, Definitions, and some Theorems</h3>
+<!--l. 66--><p class="noindent" >What follows is a series of some basic groundwork necessary to begin to study random walks. Much of it
+is directly sourced from Grimmett and Walsh&#8217;s <span 
+class="ptmri7t-x-x-120">Probability: An Introduction </span>(Grimmett and Walsh,
+2000).  However, we adapt it slightly to introduce more abstract notions of systems and state spaces which we
+believe would be useful in future studies of stochastic processes.
+                                                                                         
+   <div class="newtheorem">
+<!--l. 70--><p class="noindent" ><span class="head">
+<a 
+ id="x1-3001r1"></a>
+<span 
+class="ptmb7t-x-x-120">Definition 1.1.</span>  </span>A <span 
+class="ptmb7t-x-x-120">stochastic process </span>is generally defined as any collection of random variables
+<span 
+class="zptmcm7m-x-x-120">X</span><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">t</span><span 
+class="zptmcm7t-x-x-120">)</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7m-x-x-120">&#x00A0;t </span><span 
+class="zptmcm7y-x-x-120">&#x2208;</span><span 
+class="zptmcm7m-x-x-120">T </span>, defined on a common probability space, where <span 
+class="zptmcm7m-x-x-120">T </span><span 
+class="zptmcm7y-x-x-120">&#x2286;</span><span 
+class="msbm-10x-x-120">&#x211D;</span>. (Hoel, 1972)
+<!--l. 72--><p class="indent" >   That  is,  a  stochastic  process  is  generally  any  collection  of  random  variables  and  they  are
+typically used to model non-deterministic systems and phenomena. In our case, and many others,
+we will study discrete systems and thus <span 
+class="zptmcm7m-x-x-120">T </span><span 
+class="zptmcm7y-x-x-120">&#x2286;</span><span 
+class="msbm-10x-x-120">&#x2124;</span>. It is important to note that the set of parameters
+on which our collection of random variables is defined, <span 
+class="zptmcm7m-x-x-120">T </span>, need not be discrete. <span 
+class="zptmcm7m-x-x-120">T </span>will be referred
+throughout this paper, and many others, as the time. Therefore, <span 
+class="zptmcm7m-x-x-120">t </span>will only take values <span 
+class="zptmcm7t-x-x-120">0</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7t-x-x-120">1</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7t-x-x-120">2</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7m-x-x-120">&#x2026;</span> and
+thus we let <span 
+class="zptmcm7m-x-x-120">T </span><span 
+class="zptmcm7t-x-x-120">= </span><span 
+class="msbm-10x-x-120">&#x2115;</span><span 
+class="zptmcm7y-x-x-120">&#x222A;{</span><span 
+class="zptmcm7t-x-x-120">0</span><span 
+class="zptmcm7y-x-x-120">}</span>
+   <div class="newtheorem">
+<!--l. 74--><p class="noindent" ><span class="head">
+<a 
+ id="x1-3002r2"></a>
+<span 
+class="ptmb7t-x-x-120">Definition 1.2.</span>  </span>A state is a certain configuration of a system. A <span 
+class="ptmb7t-x-x-120">state space </span>is the set of all possible
+configurations/states of a system. We will denote <span 
+class="zptmcm7y-x-x-120"><img 
+src="zptmcm7y-c-49.png" alt="I" class="-120x-x-49" /> </span>to be the state space of the stochastic process
+for which we are interested in. For this paper, the state space is assumed to be <span 
+class="ptmri7t-x-x-120">discrete </span>and <span 
+class="zptmcm7y-x-x-120"><img 
+src="zptmcm7y-c-49.png" alt="I" class="-120x-x-49" /> </span><span 
+class="zptmcm7t-x-x-120">= </span><span 
+class="msbm-10x-x-120">&#x2124;</span>.
+   <div class="newtheorem">
+<!--l. 76--><p class="noindent" ><span class="head">
+<a 
+ id="x1-3003r3"></a>
+<span 
+class="ptmb7t-x-x-120">Definition 1.3.</span>  </span>A <span 
+class="ptmb7t-x-x-120">random walk </span>is a stochastic process that describes the path that consists of a
+succession of random steps on some mathematical space.
+<!--l. 78--><p class="noindent" >We will observe the state of our system at times <span 
+class="zptmcm7t-x-x-120">0</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7t-x-x-120">1</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7t-x-x-120">2</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7m-x-x-120">&#x2026;</span> and at each of these points in time, the
+system will have one of the states <span 
+class="zptmcm7m-x-x-120">&#x2026;</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7y-x-x-120">-</span><span 
+class="zptmcm7t-x-x-120">2</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7y-x-x-120">-</span><span 
+class="zptmcm7t-x-x-120">1</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7t-x-x-120">0</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7t-x-x-120">1</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7t-x-x-120">2</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7m-x-x-120">&#x2026;</span>. Let <span 
+class="zptmcm7t-x-x-120">0 </span><span 
+class="zptmcm7m-x-x-120">&#x003C; p &#x003C; </span><span 
+class="zptmcm7t-x-x-120">1 </span>be the probability that the
+system &#8221;jumps&#8221; from its current state to its current state plus <span 
+class="zptmcm7t-x-x-120">1</span>. Let <span 
+class="zptmcm7m-x-x-120">q </span><span 
+class="zptmcm7t-x-x-120">= 1</span><span 
+class="zptmcm7y-x-x-120">-</span><span 
+class="zptmcm7m-x-x-120">p </span>be the probability
+that it &#8221;jump&#8221;s from its current state to its current state plus <span 
+class="zptmcm7y-x-x-120">-</span><span 
+class="zptmcm7t-x-x-120">1</span>. If <span 
+class="zptmcm7m-x-x-120">S</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub> denotes the state of the system at
+time <span 
+class="zptmcm7m-x-x-120">n</span>, then
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main0x.svg" alt="        {
+         S  + 1  w ith probability p,
+Sn+1 =    n
+         Sn - 1  w ith probability q,
+" class="math-display" 
+   width="256"
+   height="100"><a 
+ id="x1-3004r1"></a></div>
+                                                                                         
+                                                                                         
+   </td><td class="equation-label">(1.1)</td></tr></table>
+<!--l. 85--><p class="nopar" >
+and we assume that the direction of each jump is independent of all earlier jumps. Therefore,
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main1x.svg" alt="Sn = S0 + X1 + X2+ &#x22C5;&#x22C5;&#x22C5;+ Xn       for n &#x2208; T
+" class="math-display" 
+   width="300"
+   height="100"><a 
+ id="x1-3005r2"></a></div>
+   </td><td class="equation-label">(1.2)</td></tr></table>
+<!--l. 89--><p class="nopar" >
+<!--l. 91--><p class="indent" >   where <span 
+class="zptmcm7m-x-x-120">S</span><sub><span 
+class="zptmcm7t-x-x-90">0</span></sub> is the initial state of the system and <span 
+class="zptmcm7m-x-x-120">X</span><sub><span 
+class="zptmcm7t-x-x-90">1</span></sub><span 
+class="zptmcm7m-x-x-120">,X</span><sub><span 
+class="zptmcm7t-x-x-90">2</span></sub><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7m-x-x-120">&#x2026;</span> are independent and identically
+distributed random variables each taking either value <span 
+class="zptmcm7y-x-x-120">-</span><span 
+class="zptmcm7t-x-x-120">1 </span>or <span 
+class="zptmcm7t-x-x-120">1 </span>with probabilities <span 
+class="msbm-10x-x-120">&#x2119;</span><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">X</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub> <span 
+class="zptmcm7t-x-x-120">= 1) = </span><span 
+class="zptmcm7m-x-x-120">p </span>and
+<span 
+class="msbm-10x-x-120">&#x2119;</span><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">X</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub> <span 
+class="zptmcm7t-x-x-120">= </span><span 
+class="zptmcm7y-x-x-120">-</span><span 
+class="zptmcm7t-x-x-120">1) = 1</span><span 
+class="zptmcm7y-x-x-120">-</span><span 
+class="zptmcm7m-x-x-120">p </span><span 
+class="zptmcm7t-x-x-120">= </span><span 
+class="zptmcm7m-x-x-120">q</span>.
+   <div class="newtheorem">
+<!--l. 93--><p class="noindent" ><span class="head">
+<a 
+ id="x1-3006r4"></a>
+<span 
+class="ptmb7t-x-x-120">Definition 1.4.</span>  </span>We  call  the  process  <span 
+class="zptmcm7m-x-x-120">S</span><sub><span 
+class="zptmcm7t-x-x-90">0</span></sub><span 
+class="zptmcm7m-x-x-120">,S</span><sub><span 
+class="zptmcm7t-x-x-90">1</span></sub><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7m-x-x-120">&#x2026;</span> a  <span 
+class="ptmb7t-x-x-120">simple  random  walk</span>.  We  call  it  <span 
+class="ptmri7t-x-x-120">symmetric  </span>if
+<span 
+class="zptmcm7m-x-x-120">p </span><span 
+class="zptmcm7t-x-x-120">= </span><span 
+class="zptmcm7m-x-x-120">q </span><span 
+class="zptmcm7t-x-x-120">=</span> <img 
+src="main2x.svg" alt="1
+2"  class="frac" align="middle"> and <span 
+class="ptmri7t-x-x-120">asymmetric </span>otherwise.
+   <div class="newtheorem">
+<!--l. 95--><p class="noindent" ><span class="head">
+<a 
+ id="x1-3007r5"></a>
+<span 
+class="ptmb7t-x-x-120">Theorem 1.5.</span>  </span>Let <span 
+class="zptmcm7m-x-x-120">S</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub> be a simple random walk where <span 
+class="zptmcm7m-x-x-120">S</span><sub><span 
+class="zptmcm7t-x-x-90">0</span></sub> <span 
+class="zptmcm7t-x-x-120">= 0</span>. <span 
+class="msbm-10x-x-120">&#x2119;</span><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">S</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub> <span 
+class="zptmcm7t-x-x-120">= 0) </span>is the probability that <span 
+class="zptmcm7m-x-x-120">S</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub> is at its
+starting point at time <span 
+class="zptmcm7m-x-x-120">n</span>. Then
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main3x.svg" alt="            {
+              0(, )           if n is odd
+&#x2119;(Sn = 0) =     n pn &#x2215;2qn&#x2215;2,  if n is even
+               n&#x2215;2
+" class="math-display" 
+   width="256"
+   height="100"><a 
+ id="x1-3008r3"></a></div>
+   </td><td class="equation-label">(1.3)</td></tr></table>
+                                                                                         
+                                                                                         
+<!--l. 101--><p class="nopar" >
+where <span 
+class="zptmcm7m-x-x-120">p,q </span>are as previously defined.
+   <div class="proof">
+<!--l. 104--><p class="indent" >   <span class="head">
+<span 
+class="ptmri7t-x-x-120">Proof.</span> </span>For <span 
+class="zptmcm7m-x-x-120">S</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub> <span 
+class="zptmcm7t-x-x-120">= 0</span>, where <span 
+class="zptmcm7m-x-x-120">S</span><sub><span 
+class="zptmcm7t-x-x-90">0</span></sub> <span 
+class="zptmcm7t-x-x-120">= 0</span>, we need that in the simple random walk <span 
+class="zptmcm7m-x-x-120">S</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub> <span 
+class="zptmcm7t-x-x-120">= </span><span 
+class="zptmcm7m-x-x-120">X</span><sub><span 
+class="zptmcm7t-x-x-90">1</span></sub> <span 
+class="zptmcm7t-x-x-120">+</span> <img 
+src="main4x.svg" alt="&#x22C5;&#x22C5;&#x22C5;"  class="@cdots" ><span 
+class="zptmcm7t-x-x-120">+ </span><span 
+class="zptmcm7m-x-x-120">X</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub>,
+there are equally as many <span 
+class="zptmcm7m-x-x-120">X</span><sub><span 
+class="zptmcm7m-x-x-90">i</span></sub>, for <span 
+class="zptmcm7m-x-x-120">i </span><span 
+class="zptmcm7y-x-x-120">&#x2208;{</span><span 
+class="zptmcm7t-x-x-120">1</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7m-x-x-120">&#x2026;</span><span 
+class="zptmcm7m-x-x-120">,n</span><span 
+class="zptmcm7y-x-x-120">}</span>, that take the value <span 
+class="zptmcm7t-x-x-120">1 </span>as there are <span 
+class="zptmcm7m-x-x-120">X</span><sub><span 
+class="zptmcm7m-x-x-90">i</span></sub> that take the
+value <span 
+class="zptmcm7y-x-x-120">-</span><span 
+class="zptmcm7t-x-x-120">1</span>. Thus, the total number of steps is <span 
+class="zptmcm7t-x-x-120">2</span><span 
+class="zptmcm7m-x-x-120">m </span>where <span 
+class="zptmcm7m-x-x-120">m </span>is the number of <span 
+class="zptmcm7m-x-x-120">X</span><sub><span 
+class="zptmcm7m-x-x-90">i</span></sub> that take the value <span 
+class="zptmcm7t-x-x-120">1</span>.
+Since <span 
+class="zptmcm7m-x-x-120">n </span>must be even in order for <span 
+class="zptmcm7m-x-x-120">S</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub> <span 
+class="zptmcm7t-x-x-120">= 0</span>, the probability that <span 
+class="zptmcm7m-x-x-120">S</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub> <span 
+class="zptmcm7t-x-x-120">= 0 </span>for an odd number of steps <span 
+class="zptmcm7m-x-x-120">n</span>
+is <span 
+class="msbm-10x-x-120">&#x2119;</span><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">S</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub> <span 
+class="zptmcm7t-x-x-120">= 0) = 0</span>.
+<!--l. 106--><p class="indent" >   Suppose now that <span 
+class="zptmcm7m-x-x-120">n </span>is even and take <span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7t-x-x-120">= 2</span><span 
+class="zptmcm7m-x-x-120">m </span>where <span 
+class="zptmcm7m-x-x-120">m </span>is the number of <span 
+class="zptmcm7m-x-x-120">X</span><sub><span 
+class="zptmcm7m-x-x-90">i</span></sub> that take on the value
+<span 
+class="zptmcm7t-x-x-120">1</span>. If <span 
+class="zptmcm7t-x-x-120">2</span><span 
+class="zptmcm7m-x-x-120">m </span>is the total number of steps of the simple random walk and we know that exactly <span 
+class="zptmcm7m-x-x-120">m </span>of
+those <span 
+class="zptmcm7t-x-x-120">2</span><span 
+class="zptmcm7m-x-x-120">m </span>steps take on the value of <span 
+class="zptmcm7t-x-x-120">1</span>, then there are exactly <img 
+src="main5x.svg" alt="(2m)
+ m" > distinct combinations of <span 
+class="zptmcm7m-x-x-120">X</span><sub><span 
+class="zptmcm7m-x-x-90">i</span></sub> in the
+simple random walk where exactly <span 
+class="zptmcm7m-x-x-120">m </span>of them are <span 
+class="zptmcm7m-x-x-120">X</span><sub><span 
+class="zptmcm7m-x-x-90">i</span></sub> <span 
+class="zptmcm7t-x-x-120">= 1</span>.
+<!--l. 108--><p class="indent" >   Note that each <span 
+class="zptmcm7m-x-x-120">X</span><sub><span 
+class="zptmcm7m-x-x-90">i</span></sub> are identical independent random variables. So, for any one simple random
+walk of <span 
+class="zptmcm7m-x-x-120">n </span>steps where <span 
+class="zptmcm7m-x-x-120">S</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub> <span 
+class="zptmcm7t-x-x-120">= 0</span>, the probability that <span 
+class="zptmcm7m-x-x-120">m X</span><sub><span 
+class="zptmcm7m-x-x-90">i</span></sub>&#8217;s take on the value <span 
+class="zptmcm7t-x-x-120">1 </span>and <span 
+class="zptmcm7m-x-x-120">m X</span><sub><span 
+class="zptmcm7m-x-x-90">i</span></sub>&#8217;s take on
+value <span 
+class="zptmcm7y-x-x-120">-</span><span 
+class="zptmcm7t-x-x-120">1 </span>is
+   <div class="math-display" >
+<img 
+src="main6x.svg" alt="&#x2119; (Xi = 1)m &#x2119;(Xi = - 1 )m = pmqm
+" class="math-display" 
+   width="228"
+   height="100"></div>
+<!--l. 110--><p class="indent" >   where  <span 
+class="zptmcm7m-x-x-120">i </span>is  any  <span 
+class="zptmcm7m-x-x-120">i </span><span 
+class="zptmcm7y-x-x-120">&#x2208; {</span><span 
+class="zptmcm7t-x-x-120">1</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7m-x-x-120">&#x2026;</span><span 
+class="zptmcm7m-x-x-120">,n</span><span 
+class="zptmcm7y-x-x-120">}</span>.  That  is,  for  each  simple  random  walk  where  <span 
+class="zptmcm7m-x-x-120">S</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub> <span 
+class="zptmcm7t-x-x-120">= 0</span>,  its
+corresponding probability of occurring is <span 
+class="zptmcm7m-x-x-120">p</span><sup><span 
+class="zptmcm7m-x-x-90">m</span></sup><span 
+class="zptmcm7m-x-x-120">q</span><sup><span 
+class="zptmcm7m-x-x-90">m</span></sup>. Since we showed that there are exactly <img 
+src="main7x.svg" alt="(2m)
+ m" > of
+these, then our probability that <span 
+class="zptmcm7m-x-x-120">S</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub> <span 
+class="zptmcm7t-x-x-120">= 0 </span>is
+<!--l. 113--><p class="indent" >
+   <div class="math-display" >
+<img 
+src="main8x.svg" alt="            (2m )
+&#x2119;(Sn = 0) =       pmqm
+              m
+" class="math-display" 
+   width="200"
+   height="100"></div>
+<!--l. 114--><p class="indent" >   where <span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7t-x-x-120">= 2</span><span 
+class="zptmcm7m-x-x-120">m</span>. (Grimmett and Walsh, 2017)
+<!--l. 116--><p class="indent" >   Note that if we assume equiprobability in our simple random walk from Theorem 2.1, if <span 
+class="zptmcm7m-x-x-120">n</span>,
+then,
+                                                                                                                                                                           
+   <div class="math-display" >
+<img 
+src="main9x.svg" alt="                                                          (n )     (n  )
+&#x2119;(S =  0) = to-tal n-umb-er of p-aths-with n-steps that end-at 0-=-n&#x2215;2-=-n&#x2215;2-
+   n              total nu mb er of paths with n steps      2n     2n&#x2215;22n&#x2215;2
+" class="math-display" 
+   width="576"
+   height="120"></div>
+<!--l. 117--><p class="indent" >   where <span 
+class="zptmcm7t-x-x-120">2</span><sup><span 
+class="zptmcm7m-x-x-90">n</span></sup> is the enumeration of all paths of length <span 
+class="zptmcm7m-x-x-120">n</span>. This is exactly the result from Theorem
+1.5 with parameter <span 
+class="zptmcm7m-x-x-120">p </span><span 
+class="zptmcm7t-x-x-120">= 1</span><span 
+class="zptmcm7m-x-x-120">&#x2215;</span><span 
+class="zptmcm7t-x-x-120">2</span>.                                                                                                            __
+   </div>
+   <div class="newtheorem">
+<!--l. 121--><p class="noindent" ><span class="head">
+<a 
+ id="x1-3009r6"></a>
+<span 
+class="ptmb7t-x-x-120">Definition 1.6.</span>  </span>We call a random walk <span 
+class="ptmb7t-x-x-120">recurrent </span>if it revisits the starting point infinitely often
+with probability one. In other words, if it is bound to revisit the starting position at some point in
+time. Otherwise, we call a random walk <span 
+class="ptmb7t-x-x-120">transient</span>. (Grimmett and Walsh, 2017)
+   <div class="newtheorem">
+<!--l. 123--><p class="noindent" ><span class="head">
+<a 
+ id="x1-3010r7"></a>
+<span 
+class="ptmb7t-x-x-120">Definition 1.7.</span>  </span>An <span 
+class="ptmb7t-x-x-120">absorbing barrier </span>is state of the system in which if the system reaches that
+state at any time, then the process terminates. The <span 
+class="ptmb7t-x-x-120">absorption probability </span>is the probability of the
+random walk reaching an absorbing barrier.
+<!--l. 125--><p class="indent" >   In the following section, we will study a specific scenario involving the definitions 1.6 and 1.7
+in regard to simple random walks.
+                                                                                         
+                                                                                         
+<!--l. 129--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">2    </span> <a 
+ id="x1-40002"></a>Gambler&#8217;s Ruin</h3>
+<!--l. 130--><p class="noindent" >The gambler&#8217;s ruin problem is a statistical scenario centered around conditional probabilities and expected
+outcomes. The problem was around long before random walks and Markov chains were formally
+discovered (the earliest known mention of the problem being in 1656. This section will cover a brief
+introduction to the idea and is not meant to be a rigorous treatment. Rather, it serves to showcase simple
+random walks themselves. We will pose the key questions behind the gambler&#8217;s ruin, develop the basic
+mathematical framework using what we discussed in Section 1, and go over a brief derivation of the
+Gambler&#8217;s Ruin theorem in lieu of a proof.
+<!--l. 132--><p class="indent" >   Let <span 
+class="zptmcm7m-x-x-120">X</span><sub><span 
+class="zptmcm7t-x-x-90">1</span></sub><span 
+class="zptmcm7m-x-x-120">,X</span><sub><span 
+class="zptmcm7t-x-x-90">2</span></sub><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7m-x-x-120">&#x2026;</span> be i.i.d. random variables on <span 
+class="zptmcm7t-x-x-120">(&#x03A9;</span><span 
+class="zptmcm7m-x-x-120">,,</span><span 
+class="msbm-10x-x-120">&#x2119;</span><span 
+class="zptmcm7t-x-x-120">) </span>as defined in (1.2). Suppose that a gambler enters a
+casino with an initial capital of <span 
+class="zptmcm7m-x-x-120">a </span>and has the stubborn strategy of betting until either they achieve their
+goal <span 
+class="zptmcm7m-x-x-120">c &#x003E; a </span>or they are broke and they hove no other choice but to leave the casino. There are two main
+questions we concern ourselves with. (Billingsley, 1995)
+<!--l. 135--><p class="indent" >   <span 
+class="ptmb7t-x-x-120">Question: </span>What is the probability of ruin? That is, the probability that they go broke.
+<!--l. 137--><p class="indent" >   <span 
+class="ptmb7t-x-x-120">Question: </span>What is the probability they reach their goal? That is, the probability they increase their
+capital from <span 
+class="zptmcm7m-x-x-120">a </span>to <span 
+class="zptmcm7m-x-x-120">c</span>.
+<!--l. 139--><p class="indent" >   Let <span 
+class="zptmcm7m-x-x-120">S</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub> <span 
+class="zptmcm7t-x-x-120">= </span><span 
+class="zptmcm7m-x-x-120">X</span><sub><span 
+class="zptmcm7t-x-x-90">1</span></sub> <span 
+class="zptmcm7t-x-x-120">+</span><img 
+src="main10x.svg" alt="&#x22C5;&#x22C5;&#x22C5;"  class="@cdots" ><span 
+class="zptmcm7t-x-x-120">+</span><span 
+class="zptmcm7m-x-x-120">X</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub>, where <span 
+class="zptmcm7m-x-x-120">S</span><sub><span 
+class="zptmcm7t-x-x-90">0</span></sub> <span 
+class="zptmcm7t-x-x-120">= 0</span>. The gambler&#8217;s fortune after <span 
+class="zptmcm7m-x-x-120">n </span>plays or steps of the simple
+random walk is <span 
+class="zptmcm7m-x-x-120">a</span><span 
+class="zptmcm7t-x-x-120">+</span><span 
+class="zptmcm7m-x-x-120">S</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub>. The event
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main11x.svg" alt="                   n- 1
+                    &#x22C2;
+Aa,n = [a + Sn = c]&#x2229;   [0 &#x003C; a+  Sk &#x003C; c]
+                   k=1
+" class="math-display" 
+   width="300"
+   height="192"><a 
+ id="x1-4001r1"></a></div>
+   </td><td class="equation-label">(2.1)</td></tr></table>
+<!--l. 142--><p class="nopar" >
+represents the success of the gambler after <span 
+class="zptmcm7m-x-x-120">n </span>plays. If <span 
+class="zptmcm7m-x-x-120">n &#x003E; c</span><span 
+class="zptmcm7y-x-x-120">-</span><span 
+class="zptmcm7m-x-x-120">a</span>, then there are more ways than one for the
+gambler to reach success. If <span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7t-x-x-120">= </span><span 
+class="zptmcm7m-x-x-120">c</span><span 
+class="zptmcm7y-x-x-120">-</span><span 
+class="zptmcm7m-x-x-120">a</span>, then the gambler must win every play of the game in order to reach
+success. And if <span 
+class="zptmcm7m-x-x-120">n &#x003C; c</span><span 
+class="zptmcm7y-x-x-120">-</span><span 
+class="zptmcm7m-x-x-120">a</span>, then there aren&#8217;t enough plays to reach success in that case and <span 
+class="zptmcm7m-x-x-120">A</span><sub><span 
+class="zptmcm7m-x-x-90">a,n</span></sub> <span 
+class="zptmcm7t-x-x-120">= </span><span 
+class="zptmcm7y-x-x-120">&#x2205;</span>.
+Additionally,
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main12x.svg" alt="Ba,n = [a + Sn = 0&#x2229; n&#x22C2;k-=11[0 &#x003C; a + Sk &#x003C; c]]
+" class="math-display" 
+   width="300"
+   height="192"><a 
+ id="x1-4002r2"></a></div>
+   </td><td class="equation-label">(2.2)</td></tr></table>
+<!--l. 146--><p class="nopar" >
+represents the ruin of the gambler after <span 
+class="zptmcm7m-x-x-120">n </span>plays.
+<!--l. 149--><p class="indent" >   If <span 
+class="zptmcm7m-x-x-120">s</span><sub><span 
+class="zptmcm7m-x-x-90">c</span></sub><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">a</span><span 
+class="zptmcm7t-x-x-120">) </span>denotes the probability of reaching success, then,
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main13x.svg" alt="          &#x22C3;&#x221E;          &#x221E;
+sc(a) = &#x2119;(   Aa,n) =    &#x2119;(Aa,n)
+          n=1        &#x2211;n=1
+" class="math-display" 
+   width="228"
+   height="100"><a 
+ id="x1-4003r3"></a></div>
+   </td><td class="equation-label">(2.3)</td></tr></table>
+<!--l. 152--><p class="nopar" >
+for <span 
+class="zptmcm7t-x-x-120">0 </span><span 
+class="zptmcm7m-x-x-120">&#x003C; a &#x003C; c</span>. Note that it splits since each <span 
+class="zptmcm7m-x-x-120">A</span><sub><span 
+class="zptmcm7m-x-x-90">a,n</span></sub> is disjoint from one another. Similarly, if <span 
+class="zptmcm7m-x-x-120">s</span><sub><span 
+class="zptmcm7t-x-x-90">0</span></sub><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">a</span><span 
+class="zptmcm7t-x-x-120">) </span>denotes the
+probability of ruin, then,
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main14x.svg" alt="          &#x22C3;&#x221E;          &#x221E;
+s0(a) = &#x2119;(   Ba,n) = &#x2211;  &#x2119;(Ba,n)
+          n=1        n=1
+" class="math-display" 
+   width="228"
+   height="100"><a 
+ id="x1-4004r4"></a></div>
+   </td><td class="equation-label">(2.4)</td></tr></table>
+<!--l. 156--><p class="nopar" >
+<!--l. 158--><p class="indent" >   <span 
+class="zptmcm7m-x-x-120">c </span>and <span 
+class="zptmcm7t-x-x-120">0 </span>are both absorbing barriers on <span 
+class="zptmcm7m-x-x-120">S</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub>. <span 
+class="zptmcm7m-x-x-120">s</span><sub><span 
+class="zptmcm7m-x-x-90">c</span></sub><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">a</span><span 
+class="zptmcm7t-x-x-120">) </span>is the absorption probability of <span 
+class="zptmcm7m-x-x-120">c</span>. <span 
+class="zptmcm7m-x-x-120">s</span><sub><span 
+class="zptmcm7t-x-x-90">0</span></sub><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">a</span><span 
+class="zptmcm7t-x-x-120">) </span>is the
+absorption probability of <span 
+class="zptmcm7t-x-x-120">0</span>.
+<!--l. 160--><p class="indent" >   From (Billingsley, 1976) we an intuitive argument for a recurrence relation on the absorption
+probability <span 
+class="zptmcm7m-x-x-120">s</span><sub><span 
+class="zptmcm7m-x-x-90">c</span></sub><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">a</span><span 
+class="zptmcm7t-x-x-120">)</span>. Note that <span 
+class="zptmcm7m-x-x-120">X</span><sub><span 
+class="zptmcm7m-x-x-90">i</span></sub> are a sequence of i.i.d. random variables in <span 
+class="zptmcm7m-x-x-120">S</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub>. So, by independence,
+the sequence <span 
+class="zptmcm7m-x-x-120">X</span><sub><span 
+class="zptmcm7t-x-x-90">2</span></sub><span 
+class="zptmcm7m-x-x-120">,X</span><sub><span 
+class="zptmcm7t-x-x-90">3</span></sub><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7m-x-x-120">&#x2026;</span> is probabilistically identical to <span 
+class="zptmcm7m-x-x-120">X</span><sub><span 
+class="zptmcm7t-x-x-90">1</span></sub><span 
+class="zptmcm7m-x-x-120">,X</span><sub><span 
+class="zptmcm7t-x-x-90">2</span></sub><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7m-x-x-120">&#x2026;</span>. Thus, the chance of success
+for a gambler with initial fortune <span 
+class="zptmcm7m-x-x-120">a </span>must be the chance of winning the first wager times the
+chance of success for an initial fortune <span 
+class="zptmcm7m-x-x-120">a</span><span 
+class="zptmcm7t-x-x-120">+1</span>, plus the chance of losing the first wager times
+the chance of success for an initial fortune <span 
+class="zptmcm7m-x-x-120">a</span><span 
+class="zptmcm7y-x-x-120">-</span><span 
+class="zptmcm7t-x-x-120">1 </span>(this is essentially the partition theorem).
+Therefore,
+                                                                                         
+                                                                                         
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main15x.svg" alt="sc(a) = psc(a+ 1)+  qsc(a - 1)
+" class="math-display" 
+   width="256"
+   height="100"><a 
+ id="x1-4005r5"></a></div>
+   </td><td class="equation-label">(2.5)</td></tr></table>
+<!--l. 167--><p class="nopar" >
+This is a second order linear homogeneous difference equation subject to boundary conditions <span 
+class="zptmcm7m-x-x-120">s</span><sub><span 
+class="zptmcm7m-x-x-90">c</span></sub><span 
+class="zptmcm7t-x-x-120">(0) = 0</span>
+and <span 
+class="zptmcm7m-x-x-120">s</span><sub><span 
+class="zptmcm7m-x-x-90">c</span></sub><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">c</span><span 
+class="zptmcm7t-x-x-120">) = 1</span>. That is, if the gambler&#8217;s initial capital is <span 
+class="zptmcm7t-x-x-120">0 </span>then there is <span 
+class="zptmcm7t-x-x-120">0 </span>chance of success and if their
+initial capital is <span 
+class="zptmcm7m-x-x-120">c </span>then there is chance of success is <span 
+class="zptmcm7t-x-x-120">1</span>. In either case, we wonder what was
+going through their heads when they walked into the casino with this goal. We can solve (2.5)
+obtaining,
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main16x.svg" alt="        {
+          A+ B (q)a  if p &#x2044;= q
+sc(a) =         p
+          A+ Ba      if p = q = 12
+" class="math-display" 
+   width="256"
+   height="100"><a 
+ id="x1-4006r6"></a></div>
+   </td><td class="equation-label">(2.6)</td></tr></table>
+<!--l. 174--><p class="nopar" >
+<!--l. 176--><p class="indent" >   Using boundary conditions, we find that <span 
+class="zptmcm7m-x-x-120">A </span><span 
+class="zptmcm7t-x-x-120">=</span> <img 
+src="main17x.svg" alt="---1---
+1-(q&#x2215;p)c"  class="frac" align="middle"> and <span 
+class="zptmcm7m-x-x-120">B </span><span 
+class="zptmcm7t-x-x-120">=</span> <img 
+src="main18x.svg" alt="---1---
+(q&#x2215;p)c-1"  class="frac" align="middle">. Thus, after substituting and
+simplifying for <span 
+class="zptmcm7m-x-x-120">A </span>and <span 
+class="zptmcm7m-x-x-120">B</span>, we have obtained,
+   <div class="newtheorem">
+<!--l. 178--><p class="noindent" ><span class="head">
+<a 
+ id="x1-4007r1"></a>
+<span 
+class="ptmb7t-x-x-120">Theorem 2.1.</span>  </span>(<span 
+class="ptmb7t-x-x-120">Gambler&#8217;s Ruin</span>) Fix <span 
+class="zptmcm7m-x-x-120">c </span>and let <span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7y-x-x-120">&#x2265;</span><span 
+class="zptmcm7t-x-x-120">1 </span>and <span 
+class="zptmcm7t-x-x-120">0 </span><span 
+class="zptmcm7m-x-x-120">&#x003C; a &#x003C; c</span>. Consider the simple random walk <span 
+class="zptmcm7m-x-x-120">S</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub>
+on the <span 
+class="zptmcm7y-x-x-120">{</span><span 
+class="zptmcm7t-x-x-120">0</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7t-x-x-120">1</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7t-x-x-120">2</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7m-x-x-120">&#x2026;</span><span 
+class="zptmcm7m-x-x-120">,c</span><span 
+class="zptmcm7y-x-x-120">} </span>with absorbing barriers on <span 
+class="zptmcm7t-x-x-120">0 </span>and <span 
+class="zptmcm7m-x-x-120">c</span>. Then, the probability that the walk is absorbed at <span 
+class="zptmcm7m-x-x-120">c</span>
+is given by
+   <table 
+class="equation"><tr><td>
+                                                                                         
+                                                                                         
+   <div class="math-display" >
+<img 
+src="main19x.svg" alt="        { (q&#x2215;p)a-1
+s (a) =   (q&#x2215;p)c-1  if p &#x2044;= q
+ c        a&#x2215;c      if p = q = 1
+                              2
+" class="math-display" 
+   width="256"
+   height="100"><a 
+ id="x1-4008r7"></a></div>
+   </td><td class="equation-label">(2.7)</td></tr></table>
+<!--l. 184--><p class="nopar" >
+<!--l. 190--><p class="indent" >
+                                                                                         
+                                                                                         
+   <h3 class="likesectionHead"><a 
+ id="x1-50001"></a>Equiprobable Paths</h3>
+<!--l. 193--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">3    </span> <a 
+ id="x1-60003"></a>Enumerating Paths</h3>
+<!--l. 194--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">3.1    </span> <a 
+ id="x1-70003.1"></a>Lattice Paths</h4>
+<!--l. 195--><p class="noindent" >We assume the reader has some familiarity with Lattice paths commonly seen in combinatorics. Recall
+that the total number of distinct Lattice paths from a point <span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">a,b</span><span 
+class="zptmcm7t-x-x-120">) </span>to a point <span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">p,q</span><span 
+class="zptmcm7t-x-x-120">) </span>is
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main20x.svg" alt="(                )
+  (p- a )+ (q- b)
+
+       p - a
+" class="math-display" 
+   width="256"
+   height="100"><a 
+ id="x1-7001r1"></a></div>
+   </td><td class="equation-label">(3.1)</td></tr></table>
+<!--l. 198--><p class="nopar" >
+We will study &#8221;diagonal&#8221; Lattice paths as diagonal steps in the first and fourth quadrants of the
+Cartesian plane where up corresponds to the step <span 
+class="zptmcm7t-x-x-120">(1</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7t-x-x-120">1) </span>and down corresponds to the step
+<span 
+class="zptmcm7t-x-x-120">(1</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7y-x-x-120">-</span><span 
+class="zptmcm7t-x-x-120">1)</span>.
+<!--l. 201--><p class="indent" >   Let <span 
+class="zptmcm7m-x-x-120">u </span>be the letter that denotes a rise, the step <span 
+class="zptmcm7t-x-x-120">(1</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7t-x-x-120">1)</span>, and <span 
+class="zptmcm7m-x-x-120">d </span>be the letter that denotes a fall, the step
+<span 
+class="zptmcm7t-x-x-120">(1</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7y-x-x-120">-</span><span 
+class="zptmcm7t-x-x-120">1)</span>. Each Lattice path is encoded by a word consisting of letters from the alphabet <span 
+class="zptmcm7y-x-x-120">{</span><span 
+class="zptmcm7m-x-x-120">u,d</span><span 
+class="zptmcm7y-x-x-120">}</span>. We denote
+the lattice word as <span 
+class="zptmcm7m-x-x-120">&#x03B3; </span>with <span 
+class="zptmcm7m-x-x-120">t </span>number of steps. That is, <span 
+class="zptmcm7m-x-x-120">&#x03B3; </span><span 
+class="zptmcm7t-x-x-120">= </span><span 
+class="zptmcm7m-x-x-120">&#x03B3;</span><sub><span 
+class="zptmcm7t-x-x-90">1</span></sub><span 
+class="zptmcm7m-x-x-120">&#x03B3;</span><sub><span 
+class="zptmcm7t-x-x-90">2</span></sub><span 
+class="zptmcm7m-x-x-120">&#x2026;</span><span 
+class="zptmcm7m-x-x-120">&#x03B3;</span><sub><span 
+class="zptmcm7m-x-x-90">t</span></sub> <span 
+class="zptmcm7y-x-x-120">&#x2208;{</span><span 
+class="zptmcm7m-x-x-120">u,d</span><span 
+class="zptmcm7y-x-x-120">}</span><sup><span 
+class="zptmcm7y-x-x-90">*</span></sup>.
+<!--l. 205--><p class="indent" >   Let <span 
+class="zptmcm7m-x-x-120">t </span>denote the total number of steps. Let <span 
+class="zptmcm7m-x-x-120">m </span>denote the total number of ups, <span 
+class="zptmcm7t-x-x-120">(1</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7t-x-x-120">1)</span>, and <span 
+class="zptmcm7m-x-x-120">n </span>denote the
+total number of downs <span 
+class="zptmcm7t-x-x-120">(1</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7y-x-x-120">-</span><span 
+class="zptmcm7t-x-x-120">1)</span>. The total number of steps is <span 
+class="zptmcm7m-x-x-120">t </span><span 
+class="zptmcm7t-x-x-120">= </span><span 
+class="zptmcm7m-x-x-120">m</span><span 
+class="zptmcm7t-x-x-120">+</span><span 
+class="zptmcm7m-x-x-120">n</span>. Then the total number of
+Lattice paths between any two points is the total number of distinct combinations of <span 
+class="zptmcm7m-x-x-120">u </span>and
+<span 
+class="zptmcm7m-x-x-120">d </span>in the Lattice path&#8217;s corresponding word <span 
+class="zptmcm7m-x-x-120">&#x03B3;</span>, which contains exactly <span 
+class="zptmcm7m-x-x-120">m u</span>&#8217;s and <span 
+class="zptmcm7m-x-x-120">n d</span>&#8217;s. This
+is,
+   <table 
+class="equation-star"><tr><td>
+   <div class="math-display" >
+<img 
+src="main21x.svg" alt="( mt) = ( tn)
+" class="math-display" ></div>
+   </td></tr></table>
+<!--l. 208--><p class="nopar" >
+<!--l. 210--><p class="indent" >   When given the coordinates that the Lattice path ends at, the difference between the start and end
+abscissa corresponds to <span 
+class="zptmcm7m-x-x-120">t</span>, since each step contains exactly one horizontal component. The
+difference between the start and end ordinate tells us the difference between the up steps and down
+steps.
+<!--l. 212--><p class="indent" >   That is, if we are enumerating all the diagonal Lattice paths from <span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">a,b</span><span 
+class="zptmcm7t-x-x-120">) </span>to <span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">p,q</span><span 
+class="zptmcm7t-x-x-120">)</span>, then
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main22x.svg" alt="t = p-  a         q - b = m - n
+" class="math-display" ><a 
+ id="x1-7002r2"></a></div>
+   </td><td class="equation-label">(3.2)</td></tr></table>
+<!--l. 215--><p class="nopar" >
+and
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main23x.svg" alt="     &#x230A;t-&#x230B;                             &#x230A; t&#x230B;
+m  =  2  + (q - b) = t- n         n =   2  + (b- q) = t- m
+" class="math-display" ><a 
+ id="x1-7003r3"></a></div>
+   </td><td class="equation-label">(3.3)</td></tr></table>
+<!--l. 218--><p class="nopar" >
+<!--l. 220--><p class="indent" >   and thus, the total number of distinct Lattice paths from <span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">a,b</span><span 
+class="zptmcm7t-x-x-120">) </span>to <span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">p,q</span><span 
+class="zptmcm7t-x-x-120">) </span>is
+   <table 
+class="equation"><tr><td>
+                                                                                         
+                                                                                         
+   <div class="math-display" >
+<img 
+src="main24x.svg" alt="(  t)   ( t)
+      =
+  m       n
+" class="math-display" ><a 
+ id="x1-7004r4"></a></div>
+   </td><td class="equation-label">(3.4)</td></tr></table>
+<!--l. 222--><p class="nopar" >
+where <span 
+class="zptmcm7m-x-x-120">t,m,n </span>are as previously defined. What is important about how <span 
+class="zptmcm7m-x-x-120">t,m,n </span>are defined is that if we are
+given the start and end coordinates, then we can find the number of distinct Lattice paths between
+them.
+<!--l. 224--><p class="indent" >   Typically it is simpler to just transform the start and end coordinates to where the start coordinate is
+the origin <span 
+class="zptmcm7t-x-x-120">(0</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7t-x-x-120">0)</span>.
+<!--l. 228--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">3.2    </span> <a 
+ id="x1-80003.2"></a>Dyck Paths: Definitions and Ideas</h4>
+<!--l. 230--><p class="noindent" >A <span 
+class="ptmb7t-x-x-120">Dyck path </span>is a path in the first quadrant, <span 
+class="msbm-10x-x-120">&#x2115;</span><span 
+class="zptmcm7y-x-x-120">&#x222A;{</span><span 
+class="zptmcm7t-x-x-120">0</span><span 
+class="zptmcm7y-x-x-120">}&#x00D7;</span><span 
+class="msbm-10x-x-120">&#x2115;</span><span 
+class="zptmcm7y-x-x-120">&#x222A;{</span><span 
+class="zptmcm7t-x-x-120">0</span><span 
+class="zptmcm7y-x-x-120">}</span>, which begins at the origin <span 
+class="zptmcm7t-x-x-120">(0</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7t-x-x-120">0) </span>and ends
+at <span 
+class="zptmcm7t-x-x-120">(2</span><span 
+class="zptmcm7m-x-x-120">n,</span><span 
+class="zptmcm7t-x-x-120">0) </span>where <span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7y-x-x-120">&#x2208;</span><span 
+class="msbm-10x-x-120">&#x2115;</span><span 
+class="zptmcm7y-x-x-120">&#x222A;{</span><span 
+class="zptmcm7t-x-x-120">0</span><span 
+class="zptmcm7y-x-x-120">}</span>. It consists of steps <span 
+class="zptmcm7t-x-x-120">(1</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7t-x-x-120">1) </span>called <span 
+class="ptmri7t-x-x-120">rises </span>and steps <span 
+class="zptmcm7t-x-x-120">(1</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7y-x-x-120">-</span><span 
+class="zptmcm7t-x-x-120">1) </span>called <span 
+class="ptmri7t-x-x-120">falls</span>. <span 
+class="zptmcm7m-x-x-120">n </span>denotes
+the semi-length of the path. The trivial Dyck path is called the empty Dyck path where <span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7t-x-x-120">= 0</span>. We denote
+the set of all Dyck paths of semi-length <span 
+class="zptmcm7m-x-x-120">n </span>as <span 
+class="ptmb7t-x-x-120">D</span><sub><span 
+class="ptmb7t-x-x-90">n</span></sub>. We may refer to Dyck paths of semi-length <span 
+class="zptmcm7m-x-x-120">n </span>as <span 
+class="zptmcm7m-x-x-120">n</span>-Dyck
+paths.
+<!--l. 232--><p class="indent" >   As seen Section 4.1, we let <span 
+class="zptmcm7m-x-x-120">u </span>be the letter that denotes a rise and <span 
+class="zptmcm7m-x-x-120">d </span>be the letter that denotes a fall. Each
+Dyck path is encoded by a word consisting of letters from the alphabet <span 
+class="zptmcm7y-x-x-120">{</span><span 
+class="zptmcm7m-x-x-120">u,d</span><span 
+class="zptmcm7y-x-x-120">}</span>. That is, for every Dyck
+path, there is a corresponding word <span 
+class="zptmcm7m-x-x-120">&#x03B1; </span><span 
+class="zptmcm7t-x-x-120">= </span><span 
+class="zptmcm7m-x-x-120">&#x03B1;</span><sub><span 
+class="zptmcm7t-x-x-90">1</span></sub><span 
+class="zptmcm7m-x-x-120">&#x03B1;</span><sub><span 
+class="zptmcm7t-x-x-90">2</span></sub><span 
+class="zptmcm7m-x-x-120">&#x2026;</span><span 
+class="zptmcm7m-x-x-120">&#x03B1;</span><sub><span 
+class="zptmcm7t-x-x-90">2</span><span 
+class="zptmcm7m-x-x-90">n</span></sub> <span 
+class="zptmcm7y-x-x-120">&#x2208;{</span><span 
+class="zptmcm7m-x-x-120">u,d</span><span 
+class="zptmcm7y-x-x-120">}</span><sup><span 
+class="zptmcm7y-x-x-90">*</span></sup>.
+<!--l. 234--><p class="indent" >   A step of a Dyck path with ordinates, with no distinction in order, <span 
+class="zptmcm7m-x-x-120">k</span><span 
+class="zptmcm7y-x-x-120">-</span><span 
+class="zptmcm7t-x-x-120">1 </span>and <span 
+class="zptmcm7m-x-x-120">k </span>(<span 
+class="zptmcm7m-x-x-120">k </span><span 
+class="zptmcm7y-x-x-120">&#x2265;</span><span 
+class="zptmcm7t-x-x-120">1</span>) is said to be at
+<span 
+class="ptmri7t-x-x-120">level </span>k. A point of a Dyck path with ordinate <span 
+class="zptmcm7m-x-x-120">k </span>is said to be at level <span 
+class="zptmcm7m-x-x-120">k</span>.
+<!--l. 236--><p class="indent" >   A <span 
+class="ptmri7t-x-x-120">peak </span>is an occurrence of the substring <span 
+class="zptmcm7m-x-x-120">ud</span>, a <span 
+class="ptmri7t-x-x-120">valley </span>is an occurrence of <span 
+class="zptmcm7m-x-x-120">du</span>. By the level<span 
+class="zptmcm7y-x-x-120">\</span>height of a
+peak we mean the level of the intersection point of its two steps. There are other specific occurrences that
+can be studied such as valleys, <span 
+class="zptmcm7m-x-x-120">du</span>, doublerises, <span 
+class="zptmcm7m-x-x-120">uu</span>, and etc.
+<!--l. 239--><p class="indent" >   By a <span 
+class="ptmri7t-x-x-120">return </span>step we mean a fall at level <span 
+class="zptmcm7t-x-x-120">1</span>.
+<!--l. 241--><p class="indent" >   If <span 
+class="zptmcm7m-x-x-120">&#x03B1; </span>and <span 
+class="zptmcm7m-x-x-120">&#x03B2; </span>are Dyck paths, then we define
+<!--l. 243--><p class="indent" >      <span 
+class="zptmcm7m-x-x-120">&#x03B1;&#x03B2; </span>as the concatenation of <span 
+class="zptmcm7m-x-x-120">&#x03B1; </span>and <span 
+class="zptmcm7m-x-x-120">&#x03B2;</span>.
+<!--l. 245--><p class="indent" >      <img 
+src="main25x.svg" alt="&#x03B1;^"  class="circ" > <span 
+class="zptmcm7t-x-x-120">:= </span><span 
+class="zptmcm7m-x-x-120">u&#x03B1;d </span>as the elevation of <span 
+class="zptmcm7m-x-x-120">&#x03B1;</span>.
+<!--l. 247--><p class="indent" >   (Note that <img 
+src="main26x.svg" alt="&#x03B1;^"  class="circ" > has semi-length of <span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7y-x-x-120">&#x2265;</span><span 
+class="zptmcm7t-x-x-120">1 </span>for any Dyck path <span 
+class="zptmcm7m-x-x-120">&#x03B1;</span>)
+<!--l. 249--><p class="indent" >   The set <img 
+src="main27x.svg" alt="^D"  class="circ" ><sub><span 
+class="ptmb7t-x-x-90">n</span></sub> is defined as
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main28x.svg" alt="D^n = {^&#x03B1; = u&#x03B1;d  : &#x03B1; &#x2208; D n}
+" class="math-display" ><a 
+ id="x1-8001r5"></a></div>
+   </td><td class="equation-label">(3.5)</td></tr></table>
+<!--l. 252--><p class="nopar" >
+<!--l. 254--><p class="indent" >   If <span 
+class="ptmb7t-x-x-120">A </span>and <span 
+class="ptmb7t-x-x-120">B </span>are finite sets of Dyck paths then <span 
+class="ptmb7t-x-x-120">AB</span> is defined as
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main29x.svg" alt="A B = {&#x03B1; &#x03B2; : &#x03B1; &#x2208; A, &#x03B2; &#x2208; B}
+" class="math-display" ><a 
+ id="x1-8002r6"></a></div>
+   </td><td class="equation-label">(3.6)</td></tr></table>
+<!--l. 257--><p class="nopar" >
+(Deutsch, 1999)
+   <div class="newtheorem">
+<!--l. 259--><p class="noindent" ><span class="head">
+<a 
+ id="x1-8003r1"></a>
+<span 
+class="ptmb7t-x-x-120">Example 3.1.</span>  </span>Consider a Dyck path of semi-length <span 
+class="zptmcm7m-x-x-120">n</span>. Let <span 
+class="zptmcm7m-x-x-120">&#x03B1; </span>be its corresponding word. Let the
+substring <span 
+class="zptmcm7m-x-x-120">ud </span><span 
+class="zptmcm7y-x-x-120">&#x2208;</span><span 
+class="zptmcm7m-x-x-120">&#x03B1;</span>. Then, we know that <span 
+class="zptmcm7m-x-x-120">ud </span>is a peak within <span 
+class="zptmcm7m-x-x-120">&#x03B1;</span>. Further, suppose we know that <span 
+class="zptmcm7m-x-x-120">u </span>is a
+rise from ordinate <span 
+class="zptmcm7m-x-x-120">k</span><span 
+class="zptmcm7y-x-x-120">-</span><span 
+class="zptmcm7t-x-x-120">1 </span>to <span 
+class="zptmcm7m-x-x-120">k </span>and therefore <span 
+class="zptmcm7m-x-x-120">u </span>is a rise of level <span 
+class="zptmcm7m-x-x-120">k</span>. Then <span 
+class="zptmcm7m-x-x-120">d </span>must be a fall from ordinate
+<span 
+class="zptmcm7m-x-x-120">k </span>to <span 
+class="zptmcm7m-x-x-120">k</span><span 
+class="zptmcm7y-x-x-120">-</span><span 
+class="zptmcm7t-x-x-120">1 </span>and therefore is a fall of level <span 
+class="zptmcm7m-x-x-120">k</span>. From our definition of levels of peaks, it follows that <span 
+class="zptmcm7m-x-x-120">ud</span>
+is a peak of level <span 
+class="zptmcm7m-x-x-120">k</span>.
+                                                                                         
+                                                                                         
+<!--l. 261--><p class="indent" >   <hr class="figure"><div class="figure" 
+><a 
+ id="x1-80041"></a>                             <img 
+src="main30x.svg" alt="udlleevveell k k- 1 " >
+<br /> <div class="caption" 
+><span class="id">Figure&#x00A0;1: </span><span  
+class="content">The <span 
+class="zptmcm7m-x-x-120">ud </span>peak at level <span 
+class="zptmcm7m-x-x-120">k </span>from Example 3.1</span></div><!--tex4ht:label?: x1-80041 -->
+<!--l. 304--><p class="indent" >   </div><hr class="endfigure">
+                                                                                         
+                                                                                         
+<!--l. 308--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">3.3    </span> <a 
+ id="x1-90003.3"></a>Dyck Paths: Generating Functions</h4>
+<!--l. 308--><p class="noindent" >&#x00A0;
+<!--l. 310--><p class="indent" >   We can enumerate the number of Dyck paths of semi-length <span 
+class="zptmcm7m-x-x-120">n </span>by finding its corresponding generating
+function, with the variable <span 
+class="zptmcm7m-x-x-120">z </span>encoding the parameter of semi-length, and performing coefficient extraction.
+In order to do so, we will develop its recurrence relation, solve it, and then deduce the coefficients into a
+well known sequence of numbers.
+<!--l. 312--><p class="indent" >   Every non-empty Dyck path can be decomposed as <span 
+class="zptmcm7m-x-x-120">&#x03B1; </span><span 
+class="zptmcm7t-x-x-120">= </span><span 
+class="zptmcm7m-x-x-120">u&#x03B2;d&#x03B3; </span>or <span 
+class="zptmcm7m-x-x-120">&#x03B1; </span><span 
+class="zptmcm7t-x-x-120">= </span><span 
+class="zptmcm7m-x-x-120">&#x03B2;u&#x03B3;d </span>where <span 
+class="zptmcm7m-x-x-120">&#x03B1;,&#x03B2;,&#x03B3; </span>are Dyck
+paths, and <span 
+class="zptmcm7m-x-x-120">&#x03B2; </span>and <span 
+class="zptmcm7m-x-x-120">&#x03B3; </span>may or may not be empty. This is called <span 
+class="ptmri7t-x-x-120">first return decomposition</span>. (Deutsch,
+1999)
+<!--l. 314--><p class="indent" >   First return decomposition allows us to decompose the set of <span 
+class="zptmcm7m-x-x-120">n</span>-Dyck paths as
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main31x.svg" alt="D n = D0D^n-1 &#x222A;D 1D^n-2&#x222A; &#x22C5;&#x22C5;&#x22C5;&#x222A; Dn- 2 ^D1&#x222A; D n-1D^0
+" class="math-display" ><a 
+ id="x1-9001r7"></a></div>
+   </td><td class="equation-label">(3.7)</td></tr></table>
+<!--l. 317--><p class="nopar" >
+and
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main32x.svg" alt="D n = ^D0D n-1 &#x222A;D^1D n-2&#x222A; &#x22C5;&#x22C5;&#x22C5;&#x222A; ^Dn- 2D1&#x222A; D^n-1D 0
+" class="math-display" ><a 
+ id="x1-9002r8"></a></div>
+   </td><td class="equation-label">(3.8)</td></tr></table>
+<!--l. 321--><p class="nopar" >
+for <span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7y-x-x-120">&#x2265;</span><span 
+class="zptmcm7t-x-x-120">1</span>. Note that these are disjoint sets. Thus, (4.8) and (4.9) together imply that the cardinality of <span 
+class="ptmb7t-x-x-120">D</span><sub><span 
+class="ptmb7t-x-x-90">n</span></sub> is
+the sum,
+   <table 
+class="equation"><tr><td>
+                                                                                         
+                                                                                         
+   <div class="math-display" >
+<img 
+src="main33x.svg" alt="|D n| = |D 0||Dn- 1|+ &#x22C5;&#x22C5;&#x22C5;+ |D n-1||D 0|
+" class="math-display" ><a 
+ id="x1-9003r9"></a></div>
+   </td><td class="equation-label">(3.9)</td></tr></table>
+<!--l. 327--><p class="nopar" >
+where <span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7y-x-x-120">&#x2265;</span><span 
+class="zptmcm7t-x-x-120">1</span>. (Deutsch, 1999)
+<!--l. 330--><p class="indent" >   Denote <span 
+class="zptmcm7m-x-x-120">D</span><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">z</span><span 
+class="zptmcm7t-x-x-120">) </span>as the generating function that counts the number of Dyck paths of semi-length <span 
+class="zptmcm7m-x-x-120">n </span>with <span 
+class="zptmcm7m-x-x-120">z</span>
+as the variable that codes the semi-length of the Dyck path. Let <span 
+class="zptmcm7m-x-x-120">P</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub> denote the enumerating polynomial of
+each <span 
+class="zptmcm7m-x-x-120">z</span><sup><span 
+class="zptmcm7m-x-x-90">n</span></sup>. This is,
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main34x.svg" alt="        &#x221E;         &#x221E;
+D (z) = &#x2211;  Pnzn = &#x2211;  |D n|zn
+        n=0        n=0
+" class="math-display" ><a 
+ id="x1-9004r10"></a></div>
+   </td><td class="equation-label">(3.10)</td></tr></table>
+<!--l. 333--><p class="nopar" >
+since, clearly, the coefficient <span 
+class="zptmcm7m-x-x-120">P</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub> in this case is <span 
+class="zptmcm7y-x-x-120">|</span><span 
+class="ptmb7t-x-x-120">D</span><sub><span 
+class="ptmb7t-x-x-90">n</span></sub><span 
+class="zptmcm7y-x-x-120">|</span>. Similarly, <img 
+src="main35x.svg" alt="D^"  class="circ" ><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">z</span><span 
+class="zptmcm7t-x-x-120">) </span>is the generating function
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main36x.svg" alt="        &#x221E;
+D^(z) =    |D^ |zn
+        &#x2211;    n
+        n=0
+" class="math-display" ><a 
+ id="x1-9005r11"></a></div>
+   </td><td class="equation-label">(3.11)</td></tr></table>
+<!--l. 342--><p class="nopar" >
+<!--l. 346--><p class="indent" >   The parameter semi-length is what we refer to as additive. If we concatenate two Dyck paths together,
+the semi-length of the result is the sum of the semi-lengths of each Dyck path. Because of this, the
+enumerating polynomial for semi-length of the concatenation of two sets is the product between the
+enumerating polynomial of each set.
+                                                                                         
+                                                                                         
+<!--l. 348--><p class="indent" >   Consider (3.9). Taking the cardinality, multiplying both sides by <span 
+class="zptmcm7m-x-x-120">z</span><sup><span 
+class="zptmcm7m-x-x-90">n</span></sup>, and sum over each <span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7y-x-x-120">&#x2265;</span><span 
+class="zptmcm7t-x-x-120">1</span>. This
+gives us,
+<!--l. 350--><p class="indent" >   <table 
+class="multline"><tr><td><img 
+src="main37x.svg" alt=" &#x221E;      n     &#x221E;            n-1     &#x221E;             n-2
+&#x2211;  |D n|z  = z&#x2211;  |D 0||Dn- 1|z    + z&#x2211;  |D 1|z|Dn- 2|z   +
+n=1          n=1                  n=1
+                                        &#x221E;        n-2         &#x221E;         n-1
+                                 &#x22C5;&#x22C5;&#x22C5;+ z &#x2211;  |Dn-2|z   |D1|z+ z &#x2211;  |D n-1|z   |D0|
+                                       n=1                   n=1
+" ></td><td class="equation-label"><br />(3.12)<br /></td></tr></table>where for each term where the index is less than zero is equal to <span 
+class="zptmcm7t-x-x-120">0</span>. Note that <br 
+class="newline" /><span 
+class="zptmcm7m-x-x-120">D</span><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">z</span><span 
+class="zptmcm7t-x-x-120">)</span><span 
+class="zptmcm7y-x-x-120">-</span><span 
+class="zptmcm7t-x-x-120">1 =</span> <span 
+class="zptmcm7v-x-x-120">&#x2211;</span><sub><span 
+class="zptmcm7m-x-x-90">n</span><span 
+class="zptmcm7t-x-x-90">=0</span></sub><sup><span 
+class="zptmcm7y-x-x-90">&#x221E;</span></sup><span 
+class="zptmcm7y-x-x-120">|</span><span 
+class="ptmb7t-x-x-120">D</span><sub><span 
+class="ptmb7t-x-x-90">n</span></sub><span 
+class="zptmcm7y-x-x-120">|</span><span 
+class="zptmcm7m-x-x-120">z</span><sup><span 
+class="zptmcm7m-x-x-90">n</span></sup><span 
+class="zptmcm7y-x-x-120">-</span><span 
+class="zptmcm7t-x-x-120">1 =</span> <span 
+class="zptmcm7v-x-x-120">&#x2211;</span><sub><span 
+class="zptmcm7m-x-x-90">n</span><span 
+class="zptmcm7t-x-x-90">=1</span></sub><sup><span 
+class="zptmcm7y-x-x-90">&#x221E;</span></sup><span 
+class="zptmcm7y-x-x-120">|</span><span 
+class="ptmb7t-x-x-120">D</span><sub><span 
+class="ptmb7t-x-x-90">n</span></sub><span 
+class="zptmcm7y-x-x-120">|</span><span 
+class="zptmcm7m-x-x-120">z</span><sup><span 
+class="zptmcm7m-x-x-90">n</span></sup>. Performing a shift of indices on the right hand side,
+<table 
+class="multline"><tr><td><img 
+src="main38x.svg" alt="            &#x221E;                &#x221E;
+D(z)- 1 = z    |D  ||D  |zn+ z   |D  ||D    |zn+
+            &#x2211;    0   n      &#x2211;     1   n- 1
+            n=0              n=0              &#x221E;                  &#x221E;
+                                      &#x22C5;&#x22C5;&#x22C5;+ z   |D    ||D  |zn + z   |D  ||D |zn
+                                            n&#x2211;=0   n-1   1      &#x2211;n=0  n   0
+" ></td><td class="equation-label"><br />(3.13)<br /></td></tr></table>
+<!--l. 367--><p class="indent" >   Note that since for terms with coefficients with indices less than zero is equal to <span 
+class="zptmcm7t-x-x-120">0</span>, then for <span 
+class="zptmcm7m-x-x-120">j &#x003E; </span><span 
+class="zptmcm7t-x-x-120">0</span>,
+<span 
+class="zptmcm7v-x-x-120">&#x2211;</span><sub><span 
+class="zptmcm7m-x-x-90">n</span><span 
+class="zptmcm7t-x-x-90">=0</span></sub><sup><span 
+class="zptmcm7y-x-x-90">&#x221E;</span></sup><span 
+class="zptmcm7y-x-x-120">|</span><span 
+class="ptmb7t-x-x-120">D</span><sub><span 
+class="ptmb7t-x-x-90">n</span><span 
+class="zptmcm7y-x-x-90">-</span><span 
+class="ptmb7t-x-x-90">j</span></sub><span 
+class="zptmcm7y-x-x-120">|</span><span 
+class="zptmcm7m-x-x-120">z</span><sup><span 
+class="zptmcm7m-x-x-90">n</span><span 
+class="zptmcm7y-x-x-90">-</span><span 
+class="zptmcm7m-x-x-90">j</span></sup> <span 
+class="zptmcm7t-x-x-120">=</span> <span 
+class="zptmcm7v-x-x-120">&#x2211;</span><sub><span 
+class="zptmcm7m-x-x-90">n</span><span 
+class="zptmcm7t-x-x-90">=0</span></sub><sup><span 
+class="zptmcm7y-x-x-90">&#x221E;</span></sup><span 
+class="zptmcm7y-x-x-120">|</span><span 
+class="ptmb7t-x-x-120">D</span><sub><span 
+class="ptmb7t-x-x-90">n</span></sub><span 
+class="zptmcm7y-x-x-120">|</span><span 
+class="zptmcm7m-x-x-120">z</span><sup><span 
+class="zptmcm7m-x-x-90">n</span></sup>. For each <span 
+class="zptmcm7m-x-x-120">n</span>, this sum is
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main39x.svg" alt="            (     &#x221E;       n        &#x221E;      n       2 &#x221E;       n  )
+D (z)- 1 = z |D 0| &#x2211;  |D n|z + |D1|z&#x2211;  |Dn |z + |D 2|z  &#x2211;  |D n|z &#x22C5;&#x22C5;&#x22C5;
+                 n=0     (        n=0        )     n=0
+                           &#x221E;       n &#x221E;      n       2
+             D (z)- 1 = z  &#x2211;  |D n|z &#x2211;  |Dn|z   = zD  (z)
+                          n=0       n=0
+" class="math-display" ><a 
+ id="x1-9008r14"></a></div>
+   </td><td class="equation-label">(3.14)</td></tr></table>
+<!--l. 374--><p class="nopar" >
+Therefore,
+   <table 
+class="equation"><tr><td>
+                                                                                         
+                                                                                         
+   <div class="math-display" >
+<img 
+src="main40x.svg" alt="             2
+D (z)- 1 = zD (z)
+" class="math-display" ><a 
+ id="x1-9009r15"></a></div>
+   </td><td class="equation-label">(3.15)</td></tr></table>
+<!--l. 378--><p class="nopar" >
+An important feature of this derivation is the fact that we used (3.9) rather than (3.7) or (3.8) to derive it. If
+instead we used (3.7) then we would have that
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main41x.svg" alt="D (z)- 1 = zD (z)D^(z)
+" class="math-display" ><a 
+ id="x1-9010r16"></a></div>
+   </td><td class="equation-label">(3.16)</td></tr></table>
+<!--l. 382--><p class="nopar" >
+<!--l. 384--><p class="indent" >   <span 
+class="ptmb7t-x-x-120">Discussion: </span>If <span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7t-x-x-120">= 0</span>, then there is one Dyck path, the empty path. That is, <span 
+class="zptmcm7y-x-x-120">|</span><span 
+class="ptmb7t-x-x-120">D</span><sub><span 
+class="ptmb7t-x-x-90">0</span></sub><span 
+class="zptmcm7y-x-x-120">|</span><span 
+class="zptmcm7t-x-x-120">= 1</span>. Otherwise, for
+any non-empty Dyck path there must be an initial rise and a first return step, i.e. first return
+decomposition. These up and down steps from the first return decomposition, as a pair, are a Dyck path of
+semi-length <span 
+class="zptmcm7t-x-x-120">1</span>, which <span 
+class="zptmcm7m-x-x-120">z </span>enumerates. Between <span 
+class="zptmcm7m-x-x-120">u </span>and <span 
+class="zptmcm7m-x-x-120">d </span>is a Dyck path which may or may not be the empty
+path. That is, there is a Dyck path of elevation. Following the first return step is also a Dyck path, which
+may or may not be the empty path.
+<!--l. 386--><p class="indent" >   <hr class="figure"><div class="figure" 
+><a 
+ id="x1-90112"></a> <img 
+src="main42x.svg" alt="DDudleleyyvveecckkll p p 0 1aatthh of elevation " >
+                                                                                         
+                                                                                         
+<br /> <div class="caption" 
+><span class="id">Figure&#x00A0;2: </span><span  
+class="content">A visual of the recurrence relation we developed (4.16). For any non-empty Dyck path,
+there must be a rise from level <span 
+class="zptmcm7t-x-x-120">0 </span>to <span 
+class="zptmcm7t-x-x-120">1 </span>and a first return step at some point. In between that initial
+rise and first return step is a Dyck path where the <span 
+class="zptmcm7t-x-x-120">0 </span>level is <span 
+class="zptmcm7t-x-x-120">1</span>. After the first return step, there is
+also a Dyck path. Each of which may or may not be the empty path. If the Dyck path between the
+first rise and return step is empty, then they would form a peak at level <span 
+class="zptmcm7t-x-x-120">1</span>. The horizontal separation
+is not literal and simply to aid visual representation.</span></div><!--tex4ht:label?: x1-90112 -->
+<!--l. 431--><p class="indent" >   </div><hr class="endfigure">
+<!--l. 433--><p class="indent" >   Thus, the generating function for any non-empty (<span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7y-x-x-120">&#x2265;</span><span 
+class="zptmcm7t-x-x-120">1</span>) Dyck path is <span 
+class="zptmcm7m-x-x-120">zD</span><sup><span 
+class="zptmcm7t-x-x-90">2</span></sup><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">z</span><span 
+class="zptmcm7t-x-x-120">)</span>. That is,
+   <table 
+class="equation-star"><tr><td>
+   <div class="math-display" >
+<img 
+src="main43x.svg" alt="D (z)- 1 = zD2(z)
+" class="math-display" ></div>
+   </td></tr></table>
+<!--l. 436--><p class="nopar" >
+Now, adding the number of Dyck paths with length <span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7t-x-x-120">= 0 </span>to both sides (this is the empty
+case, <span 
+class="zptmcm7t-x-x-120">1</span>), the recurrence relation that describes the total number of <span 
+class="zptmcm7m-x-x-120">n</span>-Dyck paths for <span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7y-x-x-120">&#x2265;</span><span 
+class="zptmcm7t-x-x-120">0</span>
+is,
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main44x.svg" alt="D (z) = 1 + zD2(z)
+" class="math-display" ><a 
+ id="x1-9012r17"></a></div>
+   </td><td class="equation-label">(3.17)</td></tr></table>
+<!--l. 440--><p class="nopar" >
+Rewriting this,
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main45x.svg" alt="zD2 (z)- D (z) + 1 = 0
+" class="math-display" ><a 
+ id="x1-9013r18"></a></div>
+   </td><td class="equation-label">(3.18)</td></tr></table>
+<!--l. 444--><p class="nopar" >
+This is a quadratic equation which we may easily solve for, obtaining,
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main46x.svg" alt="           &#x221A; ------
+D (z) = 1�---1---4z-
+            2z
+" class="math-display" ><a 
+ id="x1-9014r19"></a></div>
+   </td><td class="equation-label">(3.19)</td></tr></table>
+<!--l. 448--><p class="nopar" >
+In order to to be sure which solution correctly enumerates Dyck paths, we take the Taylor series expansion
+of the discriminant. This gives us,
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main47x.svg" alt="       1&#x2215;2            2     3
+(1 - 4z)   = 1 - 2z- 2z  - 4z - ...
+" class="math-display" ><a 
+ id="x1-9015r20"></a></div>
+   </td><td class="equation-label">(3.20)</td></tr></table>
+<!--l. 452--><p class="nopar" >
+Since we are interested in the enumeration, we take the sign that will give us positive numbers. Therefore,
+we choose
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main48x.svg" alt="D (z) = 1--&#x221A;12z---4z-
+" class="math-display" ><a 
+ id="x1-9016r21"></a></div>
+   </td><td class="equation-label">(3.21)</td></tr></table>
+<!--l. 456--><p class="nopar" >
+In order to utilize for the enumeration of the number of Dyck paths of semi-length <span 
+class="zptmcm7m-x-x-120">n</span>, we want to be
+able to represent <span 
+class="zptmcm7m-x-x-120">D</span><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">z</span><span 
+class="zptmcm7t-x-x-120">) </span>as a formal power series which we can perform coefficient extraction
+on. To do this, recall Netwon&#8217;s generalized binomial theorem and perform the expansion on
+<span 
+class="zptmcm7t-x-x-120">(1</span><span 
+class="zptmcm7y-x-x-120">-</span><span 
+class="zptmcm7t-x-x-120">4</span><span 
+class="zptmcm7m-x-x-120">z</span><span 
+class="zptmcm7t-x-x-120">)</span><sup><span 
+class="zptmcm7t-x-x-90">1</span><span 
+class="zptmcm7m-x-x-90">&#x2215;</span><span 
+class="zptmcm7t-x-x-90">2</span></sup>.
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main49x.svg" alt="&#x221A; ------   &#x221E;  (    )
+  1-  4z = &#x2211;   1 &#x2215;2 (- 4z)n
+          n=0    n
+" class="math-display" ><a 
+ id="x1-9017r22"></a></div>
+   </td><td class="equation-label">(3.22)</td></tr></table>
+<!--l. 460--><p class="nopar" >
+The binomial coefficient, for any <span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7t-x-x-120">= 0</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7t-x-x-120">1</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7t-x-x-120">2</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7m-x-x-120">&#x2026;</span>, can be simplified as follows,
+   <div class="math-display" >
+<img 
+src="main50x.svg" alt="(    )
+  1&#x2215;2     (12)n-  (12)(12---1)(12 --2-)&#x22C5;&#x22C5;&#x22C5;(12---n+-1-)  (12)(--12)(--32)&#x22C5;&#x22C5;&#x22C5;(--2n2+3)-
+   n   =   n!  =               n!              =            n!
+" class="math-display" ></div>
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main51x.svg" alt="  2- n(- 1)n-1(1)(3) &#x22C5;&#x22C5;&#x22C5;(2n - 3)           (1)(3)&#x22C5;&#x22C5;&#x22C5;(2n- 3)
+= ---------------------------- = (- 1 )n- 1------n---------
+               n!                              2 n!
+" class="math-display" ><a 
+ id="x1-9018r23"></a></div>
+   </td><td class="equation-label">(3.23)</td></tr></table>
+                                                                                         
+                                                                                         
+<!--l. 466--><p class="nopar" >
+Multiplying by <img 
+src="main52x.svg" alt="(2(2))((44)&#x22C5;)&#x22C5;&#x22C5;&#x22C5;&#x22C5;&#x22C5;(2(2nn--44))-"  class="frac" align="middle">, we get
+   <div class="math-display" >
+<img 
+src="main53x.svg" alt="          (1)(2)(3)(4)&#x22C5;&#x22C5;&#x22C5;(2n-  4)(2n - 3)                    (2n- 3 )!
+= (- 1)n-1------n----------------------- = (- 1)n-1-n---n--2(---------------)
+               2 n!(2)(4)&#x22C5;&#x22C5;&#x22C5;(2n- 4 )               2 n!2     (1 )(2 )&#x22C5;&#x22C5;&#x22C5;(n - 2)
+" class="math-display" ></div>
+<!--l. 469--><p class="indent" >
+   <div class="math-display" >
+<img 
+src="main54x.svg" alt="       n-1 ---(2n---3)!(2n---2)(2n---1)(2n)----       n-1------------(2n-)!-----------
+=  (- 1)    22n- 2n!(n- 2)!(2n- 2 )(2n - 1)(2n) = (- 1)   22nn!(n-  2)!(n - 1)n(2n-  1)
+" class="math-display" ></div>
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main55x.svg" alt="                                 n-1 (   )
+= (- 1)n-1 ----(2n)!-----= -(--1)----  2n
+           4n(2n- 1)n!n!   4n(2n - 1)   n
+" class="math-display" ><a 
+ id="x1-9019r24"></a></div>
+   </td><td class="equation-label">(3.24)</td></tr></table>
+<!--l. 477--><p class="nopar" >
+That is, we have found that for <span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7t-x-x-120">= 0</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7t-x-x-120">1</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7t-x-x-120">2</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7m-x-x-120">&#x2026;</span>
+   <table 
+class="equation"><tr><td>
+                                                                                         
+                                                                                         
+   <div class="math-display" >
+<img 
+src="main56x.svg" alt="(    )         n-1  (   )
+  1&#x2215;2  =  -(--1)----- 2n
+   n      4n(2n- 1)   n
+" class="math-display" ><a 
+ id="x1-9020r25"></a></div>
+   </td><td class="equation-label">(3.25)</td></tr></table>
+<!--l. 481--><p class="nopar" >
+Therefore, for <span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7t-x-x-120">= 0</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7t-x-x-120">1</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7t-x-x-120">2</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7m-x-x-120">&#x2026;</span>
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main57x.svg" alt="(    )                     (   )            (   )
+  1&#x2215;2       n   4n(- 1)2n-1  2n   n    - 1   2n   n
+       (- 4z) = --n--------      z =  ------     z
+   n             4 (2n- 1 )  n        2n- 1   n
+" class="math-display" ><a 
+ id="x1-9021r26"></a></div>
+   </td><td class="equation-label">(3.26)</td></tr></table>
+<!--l. 485--><p class="nopar" >
+Now, plugging this back into (3.22) the binomial expansion of <img 
+src="main58x.svg" alt="&#x221A; ------
+  1- 4z"  class="sqrt" >, we get,
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main59x.svg" alt="                    (   )                  (   )
+&#x221A; ------   &#x221E;  ---1--  2n   n       &#x221E; ---1--  2n   n
+  1 - 4z = &#x2211;  2n - 1  n   z = 1 - &#x2211;  2n - 1   n  z
+          n=0                     n=1
+" class="math-display" ><a 
+ id="x1-9022r27"></a></div>
+   </td><td class="equation-label">(3.27)</td></tr></table>
+<!--l. 492--><p class="nopar" >
+Now, substituting this expression into our expression <span 
+class="zptmcm7m-x-x-120">D</span><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">z</span><span 
+class="zptmcm7t-x-x-120">)</span>, we get
+   <table 
+class="equation-star"><tr><td>
+                                                                                         
+                                                                                         
+   <div class="math-display" >
+<img 
+src="main60x.svg" alt="           (      &#x221E;    1  (2n) n)
+        1-   1- &#x2211; n=12n-1  n z
+D (z) = -------------------------
+                   2z
+" class="math-display" ></div>
+   </td></tr></table>
+<!--l. 495--><p class="nopar" >
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main61x.svg" alt="            (  )                 (   )
+   &#x2211;&#x221E;n=1-21n-1-2nn-zn-   &#x221E; ----1----  2n   n-1
+=        2z       =  &#x2211;  2(2n - 1)   n  z
+                     n=1
+" class="math-display" ><a 
+ id="x1-9023r28"></a></div>
+   </td><td class="equation-label">(3.28)</td></tr></table>
+<!--l. 497--><p class="nopar" >
+substituting <span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7t-x-x-120">= </span><span 
+class="zptmcm7m-x-x-120">n</span><span 
+class="zptmcm7y-x-x-120">-</span><span 
+class="zptmcm7t-x-x-120">1 </span>and performing a shift of indices in the sum, we get
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main62x.svg" alt="                    (      )
+D (z) = &#x2211;  ----1----  2n+ 2  zn
+       n=0 2(2n+  1)  n + 1
+" class="math-display" ><a 
+ id="x1-9024r29"></a></div>
+   </td><td class="equation-label">(3.29)</td></tr></table>
+<!--l. 501--><p class="nopar" >
+Lastly,
+   <div class="math-display" >
+                                                                                         
+                                                                                         
+<img 
+src="main63x.svg" alt="2(2n1+-1)(2nn++12) =  2(21n+-1)-(2n+(n-2+)(12)n!(+n+1)1()2!n)!-
+" class="math-display" ></div>
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main64x.svg" alt="                            (   )         (   )
+= --2n+-2--(2n)! = -2(n+-1-)  2n  =  --1-- 2n
+  2(n + 1)2 n!n!   2 (k + 1)2  n      n+ 1   n
+" class="math-display" ><a 
+ id="x1-9025r30"></a></div>
+   </td><td class="equation-label">(3.30)</td></tr></table>
+<!--l. 504--><p class="nopar" >
+Recall that the <span 
+class="zptmcm7m-x-x-120">n</span><sup><span 
+class="zptmcm7m-x-x-90">th</span></sup> Catalan number is <span 
+class="zptmcm7m-x-x-120">C</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub> <span 
+class="zptmcm7t-x-x-120">=</span> <img 
+src="main65x.svg" alt="-1--
+n+1"  class="frac" align="middle"><img 
+src="main66x.svg" alt="(  )
+ 2n
+  n" >. That is, the coefficient of <span 
+class="zptmcm7m-x-x-120">z</span><sup><span 
+class="zptmcm7m-x-x-90">n</span></sup> is
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main67x.svg" alt="         (       )        (   )
+    1      2n + 2      1    2n
+---------          = -----       = Cn
+2(2n + 1)  n + 1     n + 1   n
+" class="math-display" ><a 
+ id="x1-9026r31"></a></div>
+   </td><td class="equation-label">(3.31)</td></tr></table>
+<!--l. 508--><p class="nopar" >
+Therefore, our generating function for enumerating the number of Dyck paths of semi-length <span 
+class="zptmcm7m-x-x-120">n</span>
+is
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main68x.svg" alt="        &#x221E;     n
+D (z) = &#x2211;  Cnz
+       n=0
+" class="math-display" ><a 
+ id="x1-9027r32"></a></div>
+   </td><td class="equation-label">(3.32)</td></tr></table>
+                                                                                         
+                                                                                         
+<!--l. 512--><p class="nopar" >
+The coefficient of each <span 
+class="zptmcm7m-x-x-120">z</span><sup><span 
+class="zptmcm7m-x-x-90">n</span></sup> is the <span 
+class="zptmcm7m-x-x-120">n</span><sup><span 
+class="zptmcm7m-x-x-90">th</span></sup> Catalan number and is the number of distinct Dyck paths of
+semi-length <span 
+class="zptmcm7m-x-x-120">n</span>. That is, <span 
+class="zptmcm7t-x-x-120">[</span><span 
+class="zptmcm7m-x-x-120">z</span><sup><span 
+class="zptmcm7m-x-x-90">n</span></sup><span 
+class="zptmcm7t-x-x-120">]</span><span 
+class="zptmcm7m-x-x-120">D</span><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">z</span><span 
+class="zptmcm7t-x-x-120">) = </span><span 
+class="zptmcm7m-x-x-120">C</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub> <span 
+class="zptmcm7t-x-x-120">= </span><span 
+class="zptmcm7y-x-x-120">|</span><span 
+class="ptmb7t-x-x-120">D</span><sub><span 
+class="ptmb7t-x-x-90">n</span></sub><span 
+class="zptmcm7y-x-x-120">|</span>.
+   <div class="newtheorem">
+<!--l. 515--><p class="noindent" ><span class="head">
+<a 
+ id="x1-9028r1"></a>
+<span 
+class="ptmb7t-x-x-120">Result 3.1.</span>  </span>The number of distinct Dyck paths of semi-length <span 
+class="zptmcm7m-x-x-120">n </span>is
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main69x.svg" alt="       1  (2n )
+Cn = -----
+     n+ 1   n
+" class="math-display" ><a 
+ id="x1-9029r33"></a></div>
+   </td><td class="equation-label">(3.33)</td></tr></table>
+<!--l. 518--><p class="nopar" >
+That is, <span 
+class="zptmcm7y-x-x-120">|</span><span 
+class="ptmb7t-x-x-120">D</span><sub><span 
+class="ptmb7t-x-x-90">n</span></sub><span 
+class="zptmcm7y-x-x-120">|</span><span 
+class="zptmcm7t-x-x-120">= </span><span 
+class="zptmcm7m-x-x-120">C</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub> where <span 
+class="zptmcm7m-x-x-120">C</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub> is the <span 
+class="zptmcm7m-x-x-120">n</span>th Catalan number.
+   <div class="newtheorem">
+<!--l. 521--><p class="noindent" ><span class="head">
+<a 
+ id="x1-9030r2"></a>
+<span 
+class="ptmb7t-x-x-120">Result 3.2.</span>  </span>The probability of a positive Dyck path occurring in the set of all Lattice paths from <span 
+class="zptmcm7t-x-x-120">(0</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7t-x-x-120">0) </span>to
+<span 
+class="zptmcm7t-x-x-120">(0</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7t-x-x-120">2</span><span 
+class="zptmcm7m-x-x-120">n</span><span 
+class="zptmcm7t-x-x-120">)</span>, where <span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7y-x-x-120">&#x2208;</span><span 
+class="msbm-10x-x-120">&#x2115; </span>and all paths are equiprobable, is,
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main70x.svg" alt="  1
+-----
+n + 1
+" class="math-display" ><a 
+ id="x1-9031r34"></a></div>
+   </td><td class="equation-label">(3.34)</td></tr></table>
+<!--l. 524--><p class="nopar" >
+                                                                                         
+                                                                                         
+<!--l. 526--><p class="indent" >   <span 
+class="ptmb7t-x-x-120">Discussion: (A bijective approach) </span>This enumeration can also be seen by noting that any Dyck word
+<span 
+class="zptmcm7m-x-x-120">&#x03B1; </span>must contain equally as many <span 
+class="zptmcm7m-x-x-120">u</span>&#8217;s and <span 
+class="zptmcm7m-x-x-120">d</span>&#8217;s while satisfying that at no time in the Dyck word there are
+more <span 
+class="zptmcm7m-x-x-120">d</span>&#8217;s than <span 
+class="zptmcm7m-x-x-120">u</span>&#8217;s. This is equivalent to the enumeration of Lattice paths to the point <span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">n,n</span><span 
+class="zptmcm7t-x-x-120">) </span>below the
+diagonal line <span 
+class="zptmcm7m-x-x-120">y </span><span 
+class="zptmcm7t-x-x-120">= </span><span 
+class="zptmcm7m-x-x-120">x</span>. It is known that the number of such Lattice paths to the point <span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">n,n</span><span 
+class="zptmcm7t-x-x-120">) </span>is <span 
+class="zptmcm7m-x-x-120">C</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub>. The
+derivation comes from excluding all paths that don&#8217;t satisfy such property from the total number of Lattice
+paths to <span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">n,n</span><span 
+class="zptmcm7t-x-x-120">)</span>. To find all paths that cross the <span 
+class="zptmcm7m-x-x-120">y </span><span 
+class="zptmcm7t-x-x-120">= </span><span 
+class="zptmcm7m-x-x-120">x </span>line, it creates a bijection from them to a set of paths
+that can be enumerated. The details of this one proof can be seen in many other texts. It is important
+to understand it because the words that represent those such Lattice paths require the exact
+same property that we saw for Dyck words. However, generating functions allow enumeration
+beyond just the number of distinct paths of semi-length <span 
+class="zptmcm7m-x-x-120">n </span>as will be seen in the following
+section.
+<!--l. 529--><p class="indent" >
+                                                                                         
+                                                                                         
+   <h4 class="subsectionHead"><span class="titlemark">3.4    </span> <a 
+ id="x1-100003.4"></a>Bivariate Generating Functions: A Brief Walkthrough</h4>
+<!--l. 532--><p class="noindent" >In this section, we shall cover a specific example of enumerating more than one parameter of a Dyck path.
+Specifically, we will study semi-length as before in conjunction with the number of peaks. Following this
+section, we will conclude with a brief study of probabilities of various families of Dyck paths and Lattice
+paths under the assumption that all paths are equiprobable.
+<!--l. 534--><p class="indent" >   We let <span 
+class="zptmcm7m-x-x-120">p</span><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">&#x03B1;</span><span 
+class="zptmcm7t-x-x-120">) </span>be the enumeration of a certain parameter of a Dyck path <span 
+class="zptmcm7m-x-x-120">&#x03B1;</span>. Denote <span 
+class="zptmcm7m-x-x-120">P</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub> as
+the enumerating polynomial of a set of Dyck paths relative to a certain parameter <span 
+class="zptmcm7m-x-x-120">p</span>. This
+is,
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main71x.svg" alt="P (t) = P  (t) =      tp(&#x03B1;)
+ n       Dn     &#x03B1;&#x2211;&#x2208;D
+                    n
+" class="math-display" ><a 
+ id="x1-10001r35"></a></div>
+   </td><td class="equation-label">(3.35)</td></tr></table>
+<!--l. 538--><p class="nopar" >
+<!--l. 540--><p class="indent" >   Similarly, <img 
+src="main72x.svg" alt=" ^
+P"  class="circ" ><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub> is defined as
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main73x.svg" alt="                     p(^&#x03B1;)
+P^n(t) = P ^Dn(t) = &#x2211;   t
+                ^&#x03B1;&#x2208;D^n
+" class="math-display" ><a 
+ id="x1-10002r36"></a></div>
+   </td><td class="equation-label">(3.36)</td></tr></table>
+<!--l. 544--><p class="nopar" >
+<!--l. 546--><p class="indent" >   We will study two parameters. Semi-length as before and the number of peaks. <span 
+class="zptmcm7m-x-x-120">z </span>will code the
+semi-length and <span 
+class="zptmcm7m-x-x-120">t </span>will code the number of peaks.
+<!--l. 548--><p class="indent" >   The generating function <span 
+class="zptmcm7m-x-x-120">D</span><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">t,z</span><span 
+class="zptmcm7t-x-x-120">) </span>is a formal power series with <span 
+class="zptmcm7m-x-x-120">P</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">t</span><span 
+class="zptmcm7t-x-x-120">) </span>as the coefficient of each term <span 
+class="zptmcm7m-x-x-120">z</span><sup><span 
+class="zptmcm7m-x-x-90">n</span></sup>.
+This is,
+   <table 
+class="equation"><tr><td>
+                                                                                         
+                                                                                         
+   <div class="math-display" >
+<img 
+src="main74x.svg" alt="          &#x221E;
+D (t,z) = &#x2211;  Pn(t)zn
+         n=0
+" class="math-display" ><a 
+ id="x1-10003r37"></a></div>
+   </td><td class="equation-label">(3.37)</td></tr></table>
+<!--l. 551--><p class="nopar" >
+<!--l. 553--><p class="indent" >   The generating function <img 
+src="main75x.svg" alt="D^"  class="circ" ><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">t,z</span><span 
+class="zptmcm7t-x-x-120">) </span>is a formal power series with <img 
+src="main76x.svg" alt="P^"  class="circ" ><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">t</span><span 
+class="zptmcm7t-x-x-120">) </span>as the coefficient of each term <span 
+class="zptmcm7m-x-x-120">z</span><sup><span 
+class="zptmcm7m-x-x-90">n</span></sup>.
+This is,
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main77x.svg" alt="          &#x221E;
+D^(t,z) = &#x2211;  P^n(t)zn
+         n=0
+" class="math-display" ><a 
+ id="x1-10004r38"></a></div>
+   </td><td class="equation-label">(3.38)</td></tr></table>
+<!--l. 556--><p class="nopar" >
+<!--l. 558--><p class="indent" >   In section <span 
+class="zptmcm7t-x-x-120">4</span><span 
+class="zptmcm7m-x-x-120">.</span><span 
+class="zptmcm7t-x-x-120">3 </span>we developed the same generating function but instead with only semi-length as a
+parameter.
+<!--l. 563--><p class="indent" >   The parameter we will study is <span 
+class="ptmri7t-x-x-120">additive</span>. By additive, we mean that if we concatenate two Dyck paths,
+then the value of the parameter of the result is simply the sum of the values of the parameters for
+each Dyck path we concatenated. That is, if we wish to study a parameter <span 
+class="zptmcm7m-x-x-120">p</span>, then for additive
+parameters,
+   <div class="math-display" >
+<img 
+src="main78x.svg" alt="p(&#x03B1; &#x03B2; ) = p (&#x03B1; )+ p (&#x03B2;)
+" class="math-display" ></div>
+<!--l. 563--><p class="indent" >   where <span 
+class="zptmcm7m-x-x-120">p</span><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">&#x03B1;</span><span 
+class="zptmcm7t-x-x-120">) </span>is the enumeration of the parameter <span 
+class="zptmcm7m-x-x-120">p </span>of the Dyck path <span 
+class="zptmcm7m-x-x-120">&#x03B1;</span>.
+                                                                                         
+                                                                                         
+<!--l. 565--><p class="indent" >   In the case of additive parameters, the number of distinct Dyck paths that satisfy the parameter is the
+product of the number of distinct paths for each set of Dyck paths. That is, if <span 
+class="zptmcm7m-x-x-120">A </span>and <span 
+class="zptmcm7m-x-x-120">B </span>are finite sets of
+Dyck paths satisfying parameter <span 
+class="zptmcm7m-x-x-120">p</span>, then
+   <div class="math-display" >
+<img 
+src="main79x.svg" alt="PAB (t) = PA(t)PB(t)
+" class="math-display" ></div>
+<!--l. 574--><p class="indent" >   (Deutsch, 1999)
+<!--l. 576--><p class="indent" >   <span 
+class="ptmb7t-x-x-120">Number of Peaks: </span>The number of peaks in a Dyck path is additive and the number of peaks for any
+Dyck path of elevation of semi-length <span 
+class="zptmcm7t-x-x-120">0 </span>is <span 
+class="zptmcm7t-x-x-120">1</span>. That is, if <img 
+src="main80x.svg" alt="^&#x03B1;"  class="circ" > <span 
+class="zptmcm7y-x-x-120">&#x2208;</span><img 
+src="main81x.svg" alt="D^"  class="circ" ><sub><span 
+class="ptmb7t-x-x-90">0</span></sub> then <span 
+class="zptmcm7m-x-x-120">p</span><span 
+class="zptmcm7t-x-x-120">(</span><img 
+src="main82x.svg" alt="^&#x03B1;"  class="circ" ><span 
+class="zptmcm7t-x-x-120">) = 1</span>.
+<!--l. 593--><p class="indent" >   Consider the enumerating polynomial for the number of peaks of Dyck paths of elevation. There are
+two cases for any Dyck path of elevation. Either <span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7t-x-x-120">= 0 </span>which gives us that the number of peaks is <span 
+class="zptmcm7t-x-x-120">1</span>. Or
+<span 
+class="zptmcm7m-x-x-120">n &#x003E; </span><span 
+class="zptmcm7t-x-x-120">0 </span>and then the number of peaks of a Dyck path of elevation <img 
+src="main83x.svg" alt="^&#x03B1;"  class="circ" > <span 
+class="zptmcm7t-x-x-120">= </span><span 
+class="zptmcm7m-x-x-120">u&#x03B1;d </span>is the number of peaks of the
+Dyck path <span 
+class="zptmcm7m-x-x-120">&#x03B1;</span>. That is,
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main84x.svg" alt="       {
+         t      if n = 0
+P^n(t) =
+         Pn(t)  if n &#x2265; 1
+" class="math-display" ><a 
+ id="x1-10005r39"></a></div>
+   </td><td class="equation-label">(3.39)</td></tr></table>
+<!--l. 599--><p class="nopar" >
+<!--l. 601--><p class="indent" >   For any Dyck path of elevation and semi-length <span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7t-x-x-120">= 0</span>, there is one peak, which <span 
+class="zptmcm7m-x-x-120">t </span>encodes. Otherwise,
+the number of peaks in all Dyck paths of elevation with semi-length <span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7y-x-x-120">&#x2265;</span><span 
+class="zptmcm7t-x-x-120">1 </span>is the number peaks in all Dyck
+paths (not in elevation) with semi-length <span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7y-x-x-120">&#x2265;</span><span 
+class="zptmcm7t-x-x-120">1</span>. This recursively defines <img 
+src="main85x.svg" alt="^P"  class="circ" ><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub> in terms of <span 
+class="zptmcm7m-x-x-120">P</span><sub><span 
+class="zptmcm7m-x-x-90">n</span></sub>. Now,
+multiplying by <span 
+class="zptmcm7m-x-x-120">z</span><sup><span 
+class="zptmcm7m-x-x-90">n</span></sup>, and summing over all <span 
+class="zptmcm7m-x-x-120">n</span>, we have
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main86x.svg" alt="&#x2211;n&#x221E;=0P^n(t)zn = tz0+ n&#x221E;&#x2211;=1 Pn(t)zn
+" class="math-display" ><a 
+ id="x1-10006r40"></a></div>
+   </td><td class="equation-label">(3.40)</td></tr></table>
+<!--l. 605--><p class="nopar" >
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main87x.svg" alt="^D (t,z) = t+ D(t,z)- 1
+" class="math-display" ><a 
+ id="x1-10007r41"></a></div>
+   </td><td class="equation-label">(3.41)</td></tr></table>
+<!--l. 608--><p class="nopar" >
+From (3.16) we know that <img 
+src="main88x.svg" alt="^D"  class="circ" ><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">z</span><span 
+class="zptmcm7t-x-x-120">) =</span> <img 
+src="main89x.svg" alt="D(zDz)-(z)1"  class="frac" align="middle">. This implies that <img 
+src="main90x.svg" alt="^D"  class="circ" ><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">t,z</span><span 
+class="zptmcm7t-x-x-120">) =</span> <img 
+src="main91x.svg" alt="Dz(Dt,(z)t-,z1)-"  class="frac" align="middle"> since (4.14) is easily
+generalized as a bivariate generating function. Therefore,
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main92x.svg" alt="D (t,z)- 1
+----------=  t+ D(t,z)- 1
+ zD (t,z)
+" class="math-display" ><a 
+ id="x1-10008r42"></a></div>
+   </td><td class="equation-label">(3.42)</td></tr></table>
+<!--l. 610--><p class="nopar" >
+multiplying both sides by <span 
+class="zptmcm7m-x-x-120">zD</span><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">t,z</span><span 
+class="zptmcm7t-x-x-120">) </span>we have
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main93x.svg" alt="D (t,z)- 1 = tzD(t,z)+ zD2 (t,z)- zD (t,z)
+" class="math-display" ><a 
+ id="x1-10009r43"></a></div>
+                                                                                         
+                                                                                         
+   </td><td class="equation-label">(3.43)</td></tr></table>
+<!--l. 612--><p class="nopar" >
+now subtracting <span 
+class="zptmcm7m-x-x-120">D</span><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">t,z</span><span 
+class="zptmcm7t-x-x-120">) </span>and adding <span 
+class="zptmcm7t-x-x-120">1 </span>to both sides,
+   <table 
+class="equation-star"><tr><td>
+   <div class="math-display" >
+<img 
+src="main94x.svg" alt="0 = zD2 (t,z)+ tzD (t,z)- zD (t,z)- D (t,z)+ 1
+" class="math-display" ></div>
+   </td></tr></table>
+<!--l. 614--><p class="nopar" >
+This is,
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main95x.svg" alt="  2
+zD (t,z)- (1+ z-  tz)D (t,z)+ 1 = 0
+" class="math-display" ><a 
+ id="x1-10010r44"></a></div>
+   </td><td class="equation-label">(3.44)</td></tr></table>
+<!--l. 618--><p class="nopar" >
+Clearly, this recurrence relation is in the form of a quadratic equation. Solving, we obtain,
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main96x.svg" alt="           &#x2218; ----------------
+1-+-z--tz�---(tz--z---1)2--4z
+              2z
+" class="math-display" ><a 
+ id="x1-10011r45"></a></div>
+   </td><td class="equation-label">(3.45)</td></tr></table>
+<!--l. 622--><p class="nopar" >
+The Taylor series expansion of the discriminant is a series of negative numbers after the first term, similar
+to (4.20). Therefore, the solution is
+                                                                                         
+                                                                                         
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main97x.svg" alt="           &#x2218; ----------------
+1 + z- tz-   (tz- z-  1)2- 4z
+-----------------------------
+              2z
+" class="math-display" ><a 
+ id="x1-10012r46"></a></div>
+   </td><td class="equation-label">(3.46)</td></tr></table>
+<!--l. 626--><p class="nopar" >
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main98x.svg" alt="              &#x221A; ----------------------------
+   1+-z---tz-----1--2z+--z2---2tz--2tz2+-t2z2
+=                     2z
+" class="math-display" ><a 
+ id="x1-10013r47"></a></div>
+   </td><td class="equation-label">(3.47)</td></tr></table>
+<!--l. 629--><p class="nopar" >
+The Narayana generating function is defined for <span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7y-x-x-120">&#x2265;</span><span 
+class="zptmcm7t-x-x-120">1 </span>and its explicit expression <span 
+class="zptmcm7m-x-x-120">&#x03C1;</span><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">t,z</span><span 
+class="zptmcm7t-x-x-120">) </span>is defined
+as
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main99x.svg" alt="                    &#x221A; ----------------------------
+         1--z---tz-----1--2z-+-z2--2tz--2tz2+-t2z2
+&#x03C1; (t,z) =                   2tz
+" class="math-display" ><a 
+ id="x1-10014r48"></a></div>
+   </td><td class="equation-label">(3.48)</td></tr></table>
+<!--l. 633--><p class="nopar" >
+Therefore, our solution to (4.40) is
+   <table 
+class="equation"><tr><td>
+                                                                                         
+                                                                                         
+   <div class="math-display" >
+<img 
+src="main100x.svg" alt="D (t,z) = 1+ t&#x03C1; (t,z)
+" class="math-display" ><a 
+ id="x1-10015r49"></a></div>
+   </td><td class="equation-label">(3.49)</td></tr></table>
+<!--l. 637--><p class="nopar" >
+where for <span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7t-x-x-120">= 0</span>, <span 
+class="zptmcm7m-x-x-120">D</span><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">t,z</span><span 
+class="zptmcm7t-x-x-120">) = 1 </span>and for <span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7y-x-x-120">&#x2265;</span><span 
+class="zptmcm7t-x-x-120">1</span>, <span 
+class="zptmcm7m-x-x-120">D</span><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">t,z</span><span 
+class="zptmcm7t-x-x-120">) = </span><span 
+class="zptmcm7m-x-x-120">t&#x03C1;</span><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">t,z</span><span 
+class="zptmcm7t-x-x-120">)</span>. The coefficients to the Narayana
+generating function are well known and are referred to as the Narayana numbers. They are denoted
+as
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main101x.svg" alt="v   = [tkzn]&#x03C1; (t,z)
+ n,k
+" class="math-display" ><a 
+ id="x1-10016r50"></a></div>
+   </td><td class="equation-label">(3.50)</td></tr></table>
+<!--l. 641--><p class="nopar" >
+We reference Appendix D.5 from <span 
+class="ptmri7t-x-x-120">Dyck path enumeration </span>by Deutsch (Deutsch, 1999) to define the
+Narayana numbers as,
+   <table 
+class="equation"><tr><td>
+   <div class="math-display" >
+<img 
+src="main102x.svg" alt="      1(n ) (  n  )
+vn,k = --
+      n  k   k + 1
+" class="math-display" ><a 
+ id="x1-10017r51"></a></div>
+   </td><td class="equation-label">(3.51)</td></tr></table>
+<!--l. 645--><p class="nopar" >
+for <span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7y-x-x-120">&#x2265;</span><span 
+class="zptmcm7t-x-x-120">1</span>. Note that <span 
+class="zptmcm7m-x-x-120">v</span><sub><span 
+class="zptmcm7m-x-x-90">n,k</span></sub> is positive only for <span 
+class="zptmcm7t-x-x-120">1 </span><span 
+class="zptmcm7y-x-x-120">&#x2264;</span><span 
+class="zptmcm7m-x-x-120">k </span><span 
+class="zptmcm7y-x-x-120">&#x2264;</span><span 
+class="zptmcm7m-x-x-120">n </span>and otherwise zero. Therefore,
+   <table 
+class="equation"><tr><td>
+                                                                                         
+                                                                                         
+   <div class="math-display" >
+<img 
+src="main103x.svg" alt="             1 (n )(   n  )
+[tkzn]D(t,z) =--
+             n   k   k-  1
+" class="math-display" ><a 
+ id="x1-10018r52"></a></div>
+   </td><td class="equation-label">(3.52)</td></tr></table>
+<!--l. 655--><p class="nopar" >
+for <span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7y-x-x-120">&#x2265;</span><span 
+class="zptmcm7t-x-x-120">1</span>. If <span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7t-x-x-120">= 0</span>, then <span 
+class="zptmcm7m-x-x-120">k </span><span 
+class="zptmcm7t-x-x-120">= 0</span>, and we define <span 
+class="zptmcm7t-x-x-120">[</span><span 
+class="zptmcm7m-x-x-120">t</span><sup><span 
+class="zptmcm7m-x-x-90">k</span></sup><span 
+class="zptmcm7m-x-x-120">z</span><sup><span 
+class="zptmcm7m-x-x-90">n</span></sup><span 
+class="zptmcm7t-x-x-120">]</span><span 
+class="zptmcm7m-x-x-120">D</span><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">t,z</span><span 
+class="zptmcm7t-x-x-120">) = 1</span>.
+<!--l. 658--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">3.5    </span> <a 
+ id="x1-110003.5"></a>Equiprobable Paths</h4>
+<!--l. 659--><p class="noindent" >Now, we will utilize our enumeration of Dyck paths and Lattice paths to study the probabilities of various
+paths given certain sample spaces and/or conditions. We will assume unless explicitly stated otherwise
+that all paths are equiprobable in whatever sample space we are studying.
+<!--l. 661--><p class="noindent" >
+   <h5 class="subsubsectionHead"><span class="titlemark">3.5.1    </span> <a 
+ id="x1-120003.5.1"></a>Example</h5>
+<!--l. 661--><p class="noindent" >Suppose that two government candidates are in a fair election race. Let <span 
+class="zptmcm7m-x-x-120">B </span>be the other party. Assume that
+the probability of <span 
+class="zptmcm7m-x-x-120">A </span>gaining a vote is <span 
+class="zptmcm7m-x-x-120">p </span><span 
+class="zptmcm7t-x-x-120">=</span> <img 
+src="main104x.svg" alt="1
+2"  class="frac" align="middle">. The results end in a tie. Given that <span 
+class="zptmcm7t-x-x-120">10</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7t-x-x-120">000 </span>ballots came
+in...
+      <!--l. 662--><p class="noindent" >[leftmargin=20pt]What is the probability that one of the candidates did not allow the other
+      to ever get a lead during the entire election race?<div class="newtheorem"><span class="head"><a 
+ id="x1-12001r1"></a>
+      <ul class="itemize1">
+      <li class="itemize">
+      <!--l. 666--><p class="noindent" ></span>Let <span 
+class="zptmcm7t-x-x-120">&#x03A9; </span>denote all possible election results that result in a tie and let <span 
+class="zptmcm7m-x-x-120">Z </span>denote the event of this
+      particular result happening. Let <span 
+class="zptmcm7m-x-x-120">A </span>be one candidate and <span 
+class="zptmcm7m-x-x-120">B </span>be the other. For this problem, either
+      candidate could have been the one to hold lead during the election race. Each case is disjoint and
+      equiprobable. Denote <span 
+class="zptmcm7m-x-x-120">Z</span><sub><span 
+class="zptmcm7m-x-x-90">A</span></sub> as the event that <span 
+class="zptmcm7m-x-x-120">A </span>never allowed <span 
+class="zptmcm7m-x-x-120">B </span>to have the lead and <span 
+class="zptmcm7m-x-x-120">Z</span><sub><span 
+class="zptmcm7m-x-x-90">B</span></sub> as
+      the event that <span 
+class="zptmcm7m-x-x-120">B </span>never allowed <span 
+class="zptmcm7m-x-x-120">A </span>to have the lead. The events are equal in cardinality.
+      Then <span 
+class="zptmcm7m-x-x-120">Z </span><span 
+class="zptmcm7t-x-x-120">= </span><span 
+class="zptmcm7m-x-x-120">Z</span><sub><span 
+class="zptmcm7m-x-x-90">A</span></sub><span 
+class="zptmcm7y-x-x-120">&#x222A;</span><span 
+class="zptmcm7m-x-x-120">Z</span><sub><span 
+class="zptmcm7m-x-x-90">B</span></sub> and since these events are clearly disjoint and equal in cardinality,
+      <div 
+class="gather-star"><img 
+src="main105x.svg" alt="                        |ZA |  |ZB|    |ZA |
+&#x2119;(Z ) = &#x2119; (ZA)+ &#x2119; (ZB) =----+ ---- = 2----
+                        |&#x03A9; |   |&#x03A9; |     |&#x03A9; |
+      " ></div>Let <span 
+class="zptmcm7m-x-x-120">S</span><sub><span 
+class="zptmcm7m-x-x-90">m</span></sub> be a simple random walk where <span 
+class="zptmcm7m-x-x-120">m </span><span 
+class="zptmcm7t-x-x-120">=</span> number of ballots counted <span 
+class="zptmcm7t-x-x-120">= 10</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7t-x-x-120">000</span>. If <span 
+class="zptmcm7m-x-x-120">m </span>were
+      odd then clearly one of the candidates must have more votes than the other and the
+      probability would be <span 
+class="msbm-10x-x-120">&#x2119;</span><span 
+class="zptmcm7t-x-x-120">(</span><span 
+class="zptmcm7m-x-x-120">Z</span><span 
+class="zptmcm7t-x-x-120">) = 0</span>. Let <span 
+class="zptmcm7m-x-x-120">n </span>denote the semi-length of the random walk. In other
+      words, <span 
+class="zptmcm7t-x-x-120">2</span><span 
+class="zptmcm7m-x-x-120">n </span><span 
+class="zptmcm7t-x-x-120">= </span><span 
+class="zptmcm7m-x-x-120">m</span>. Initially, the election starts fair. That is, <span 
+class="zptmcm7m-x-x-120">S</span><sub><span 
+class="zptmcm7t-x-x-90">0</span></sub> <span 
+class="zptmcm7t-x-x-120">= 0</span>. Each ballot casted will
+                                                                                         
+                                                                                         
+      represent a discrete step in time. If a ballot is for <span 
+class="zptmcm7m-x-x-120">A</span>, then we let it add <span 
+class="zptmcm7t-x-x-120">1 </span>to the current
+      state of the system with probability <span 
+class="zptmcm7m-x-x-120">p </span><span 
+class="zptmcm7t-x-x-120">=</span> <img 
+src="main106x.svg" alt="12"  class="frac" align="middle">. Otherwise, we subtract <span 
+class="zptmcm7t-x-x-120">1 </span>with probability
+      <span 
+class="zptmcm7t-x-x-120">1</span><span 
+class="zptmcm7y-x-x-120">-</span><span 
+class="zptmcm7m-x-x-120">p </span><span 
+class="zptmcm7t-x-x-120">=</span> <img 
+src="main107x.svg" alt="12"  class="frac" align="middle">.
+      <!--l. 673--><p class="noindent" ><span 
+class="zptmcm7y-x-x-120">|</span><span 
+class="zptmcm7t-x-x-120">&#x03A9;</span><span 
+class="zptmcm7y-x-x-120">| </span>is the total number of simple random walks that terminate at <span 
+class="zptmcm7t-x-x-120">0</span>. We know then that
+      from the proof of Theorem 2.1 and the total number of diagonal Lattice paths (3.4),
+      <div 
+class="gather-star"><img 
+src="main108x.svg" alt="      (   )
+        2n
+|&#x03A9; | =  n
+      " ></div>
+      <!--l. 678--><p class="noindent" ><span 
+class="zptmcm7y-x-x-120">|</span><span 
+class="zptmcm7m-x-x-120">Z</span><sub><span 
+class="zptmcm7m-x-x-90">A</span></sub><span 
+class="zptmcm7y-x-x-120">| </span>is the total number of simple random walks that terminate at <span 
+class="zptmcm7t-x-x-120">0 </span>where <span 
+class="zptmcm7m-x-x-120">S</span><sub><span 
+class="zptmcm7m-x-x-90">i</span></sub> <span 
+class="zptmcm7y-x-x-120">&#x2265;</span><span 
+class="zptmcm7t-x-x-120">0 </span>for all
+      <span 
+class="zptmcm7m-x-x-120">i </span><span 
+class="zptmcm7t-x-x-120">= 0</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7t-x-x-120">1</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7t-x-x-120">2</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7m-x-x-120">&#x2026;</span><span 
+class="zptmcm7m-x-x-120">,m</span>. In other words, it is a simple random walk that ends at <span 
+class="zptmcm7t-x-x-120">0 </span>where at no point in time <span 
+class="zptmcm7m-x-x-120">i</span>
+      are there more down steps (ballots for <span 
+class="zptmcm7m-x-x-120">B</span>) than there are up steps. This is a Dyck path of semi-length
+      <span 
+class="zptmcm7m-x-x-120">n</span>. Thus, <div 
+class="gather-star"><img 
+src="main109x.svg" alt="                 (   )
+|ZA| = Cn = --1-- 2n
+            n+ 1   n
+      " ></div>and we have that, <div 
+class="gather-star"><img 
+src="main110x.svg" alt="         |Z |     C        1       2
+&#x2119; (Z) = 2--A-=  2(-n) = 2----- = -----
+         |&#x03A9; |     2nn     n + 1   5001
+
+
+           &#x2119;(Z) &#x2248; 0.03999%
+      " ></div>
+      </div>
+      <!--l. 688--><p class="noindent" >
+      </li>
+      <li class="itemize">
+      <!--l. 690--><p class="noindent" >What is the probability that there were exactly <span 
+class="zptmcm7t-x-x-120">2</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7t-x-x-120">000 </span>number of times that the ballots shifted from <span 
+class="zptmcm7m-x-x-120">A</span>
+      to <span 
+class="zptmcm7m-x-x-120">B</span>, given that <span 
+class="zptmcm7m-x-x-120">A </span>never allowed <span 
+class="zptmcm7m-x-x-120">B </span>to take the lead at any point? By shifted from <span 
+class="zptmcm7m-x-x-120">A </span>to <span 
+class="zptmcm7m-x-x-120">B</span>, we mean
+      that the last ballot casted was for <span 
+class="zptmcm7m-x-x-120">A </span>and the next was casted for <span 
+class="zptmcm7m-x-x-120">B</span>. What about only <span 
+class="zptmcm7t-x-x-120">1 </span>shift from <span 
+class="zptmcm7m-x-x-120">A </span>to
+      <span 
+class="zptmcm7m-x-x-120">B</span>?
+      <div class="newtheorem">
+      <!--l. 692--><p class="noindent" ><span class="head">
+<a 
+ id="x1-12002r2"></a>
+                                                                                         
+                                                                                         
+    <span 
+class="ptmb7t-x-x-120">Solution 2.</span>  </span>Let <span 
+class="zptmcm7m-x-x-120">V </span>denote the event that <span 
+class="zptmcm7m-x-x-120">A </span>never allowed <span 
+class="zptmcm7m-x-x-120">B </span>to take the lead but resulted in a tie and
+      had <span 
+class="zptmcm7t-x-x-120">2</span><span 
+class="zptmcm7m-x-x-120">,</span><span 
+class="zptmcm7t-x-x-120">000 </span>shifts in the election. Each shift represents a peak in the election that is a Dyck path as
+      discussed in part (a). Additionally, we already found <span 
+class="zptmcm7y-x-x-120">|</span><span 
+class="zptmcm7m-x-x-120">Z</span><sub><span 
+class="zptmcm7m-x-x-90">A</span></sub><span 
+class="zptmcm7y-x-x-120">| </span>Therefore,
+      <table 
+class="equation-star"><tr><td>
+<div class="math-display" >
+<img 
+src="main111x.svg" alt="&#x2119;(V ) = |V|-=  v5000,2000-
+        |ZA |    C5,000
+" class="math-display" ></div>
+      </td></tr></table>
+      <!--l. 696--><p class="nopar" >
+      Unfortunately, this isn&#8217;t easily solvable by just plugging in numbers and evaluating. It is too large of
+      a number in both the numerator and denominator for much practical use itself, even
+      though the numbers are well known and have been calculated. In fact, the 5000th Catalan
+      number is well over the number of observable particles in the universe. Likewise for
+      <span 
+class="zptmcm7m-x-x-120">v</span><sub><span 
+class="zptmcm7t-x-x-90">5000</span><span 
+class="zptmcm7m-x-x-90">,</span><span 
+class="zptmcm7t-x-x-90">2000</span></sub>.
+      <!--l. 699--><p class="noindent" >For the second part of this question, this can be easily solved by noting that if there is one peak in a
+      Dyck path of semi-length <span 
+class="zptmcm7t-x-x-120">5000 </span>then that peak must occur at level <span 
+class="zptmcm7t-x-x-120">5000 </span>and thus, since there is only
+      one such path, the probability in that case is
+      <table 
+class="equation-star"><tr><td>
+<div class="math-display" >
+<img 
+src="main112x.svg" alt="--1--
+C5000
+" class="math-display" ></div>
+      </td></tr></table>
+      <!--l. 702--><p class="nopar" >
+      </div>
+      <!--l. 703--><p class="noindent" >
+                                                                                         
+                                                                                         
+      </li></ul>
+                                                                                         
+                                                                                         
+<!--l. 737--><p class="noindent" >
+   <h3 class="likesectionHead"><a 
+ id="x1-130003.5.1"></a>Acknowledgments</h3>
+<!--l. 739--><p class="noindent" >I give all due credit to all references for all sections. In specific, <span 
+class="ptmri7t-x-x-120">Probability: An Introduction </span>by Grimmet
+and Welsh and <span 
+class="ptmri7t-x-x-120">Probability and measure </span>are what allowed me to learn and write about random walks and
+the gambler&#8217;s ruin in Section 2. <span 
+class="ptmri7t-x-x-120">Dyck path enumeration </span>by Deutsch is what allowed me to learn and write
+about Dyck path enumeration in Section 3.
+<!--l. 743--><p class="indent" >   I would like to acknowledge the role that Georgia Tech&#8217;s Directed Reading Program with postdoc Dr.
+Herscovici had in providing me the ability to create this paper.
+<!--l. 745--><p class="noindent" >
+   <h3 class="likesectionHead"><a 
+ id="x1-140003.5.1"></a>References</h3>
+<!--l. 745--><p class="noindent" >
+    <div class="thebibliography">
+    <p class="bibitem" ><span class="biblabel">
+ [1]<span class="bibsp">&#x00A0;&#x00A0;&#x00A0;</span></span><a 
+ id="Xarticle"></a>Deutsch, E. (1999). Dyck Path enumeration. Discrete Mathematics, 204(1-3), 167&#8211;202.
+    </p>
+    <p class="bibitem" ><span class="biblabel">
+ [2]<span class="bibsp">&#x00A0;&#x00A0;&#x00A0;</span></span><a 
+ id="Xtextbook"></a>Billingsley, P. (1995). Section 7. In Probability and measure (pp. 92&#8211;101). essay, Wiley.
+    </p>
+    <p class="bibitem" ><span class="biblabel">
+ [3]<span class="bibsp">&#x00A0;&#x00A0;&#x00A0;</span></span><a 
+ id="Xtextbook"></a>Grimmett, G., &amp;amp; A., W. D. J. (2017). Chapter 10. In Probability an introduction (2nd
+    ed., pp. 167&#8211;174). essay, Oxford University Press.
+    </p>
+    <p class="bibitem" ><span class="biblabel">
+ [4]<span class="bibsp">&#x00A0;&#x00A0;&#x00A0;</span></span><a 
+ id="Xtextbook"></a>Hoel, P. G., Port, S. C., &amp;amp; Stone, C. J. (1987). Chapter 1. In Introduction to stochastic
+    processes (pp. 1&#8211;7). essay, Waveland Press.</p></div>
+    
+</body></html> 
+
+                                                                                         
+                                                                                         
+                                                                                         
+
+
